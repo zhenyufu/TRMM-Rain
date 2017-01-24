@@ -1,39 +1,3 @@
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,Temperatura (°c),Humedad (%),Lluvia (mm),Presion (mb),VelocidaddelViento (m/s),DirecciondelViento
-Prom,Max,Min
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-2002,30,16,22.4,28.8,22.9,22.2,25,22.8,24.4,0,NE,2
 02-Dic-2002,31,16.5,22.4,29.2,23.2,22.2,26.3,22.9,20.1,5.9,SE,4
 03-Dic-2002,30.5,16.5,23.5,26.4,21.3,22.7,24.8,20.4,0,4.3,SE,1
@@ -65,8 +29,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-2002,31.5,22.6,24,30.8,24.2,22.8,24.4,23.6,0,0,NE,5
 30-Dic-2002,32.5,22.5,23,29.6,25.4,22.6,25.8,24.6,.4,3.9,NW,2
 31-Dic-2002,27.2,21,21.3,24,22,21,22.4,21.6,35.4,0,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-2003,31.5,15.5,22.4,32,24.6,21.2,26.2,23.4,0,0,C,
 02-Ene-2003,32,22.5,23.8,30.8,24.4,23.2,25.4,23.6,0,8,NE,2
 03-Ene-2003,30.5,21.4,22.8,29.8,25.6,22.6,26.2,24.8,18.8,0,C,
@@ -98,8 +60,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-2003,32,20,22,31.4,24,21,26,23.4,0,0,C,
 30-Ene-2003,32.5,21.5,22.6,27,23.8,21.6,24,21.6,0,5.3,C,
 31-Ene-2003,33,21,22.6,31.8,23.8,21.6,24.2,22.8,1.5,0,NW,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-2003,33,20.5,22.6,32.6,25.6,21.4,27,23.8,0,0,N,6
 02-Feb-2003,28.5,22.5,24,27.4,25,23.4,25.2,24.6,9.9,20.3,SE,2
 03-Feb-2003,30.5,20.5,21.6,29.6,22.4,20.8,24.6,22,22.3,17.5,NW,4
@@ -128,8 +88,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-2003,32,20.5,21.4,31.8,23.4,21.2,23.8,22.6,26.8,0,NW,6
 27-Feb-2003,28.5,21,21.2,27,24,21,23.6,23.6,52.7,1.2,SE,2
 28-Feb-2003,30.5,21,22.4,26.4,24.4,22,22.8,24,0,6.4,SE,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-2003,31.5,21,22.8,27.8,23.8,22.2,23.8,23,.3,.1,SE,2
 02-Mar-2003,30.5,21,22.8,29.6,23.6,22.2,24.8,23.2,13.5,0,C,
 03-Mar-2003,26,21,22,23.6,22.6,24.8,22.4,22.6,16,0,NE,2
@@ -161,8 +119,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-2003,30.5,21,22.4,28.4,24.2,22.2,24.2,23.8,9,0,N,2
 30-Mar-2003,31.5,21.5,23.4,30.4,23.6,23,24.8,22.6,0,3.2,N,6
 31-Mar-2003,30.5,21,21.4,29.2,24.4,21.2,26,24.2,47.2,3.4,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-2003,20,19.5,21,23.2,21.4,21,21,20.2,105.4,6.7,C,
 02-Abr-2003,30.5,19,24.8,28,23.4,23.6,25.8,22.4,0,1.1,SW,8
 03-Abr-2003,29.5,21,22.4,27,24,22.2,24.2,22.8,2,3.2,C,
@@ -193,8 +149,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-2003,29.5,21,22.4,28,23.4,22.6,23.4,23.4,3.5,23.5,C,
 29-Abr-2003,30.5,21,22.8,30,23.6,22.4,25.2,23,.2,0,N,2
 30-Abr-2003,31.5,20.5,23.6,31.6,24,22.6,26.2,22.8,16.3,0,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-2003,31,20.5,23.4,30.8,23.8,22.4,25.8,21.8,0,0,SE,4
 02-May-2003,30.5,20.5,23.2,27.4,24.8,22.6,23.6,23.2,0,1,NE,4
 03-May-2003,26.5,21,23.2,24.8,21.4,22.6,22.8,20.8,.1,4.8,NW,2
@@ -226,8 +180,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-2003,27,19,21.8,26,22,21.2,22.8,21.6,23.1,.1,NE,2
 30-May-2003,28,19.5,20.8,27.2,21.2,21.2,23.2,21.2,17.5,6,C,
 31-May-2003,31,19.5,21.8,30.2,22.6,21.6,24.6,21.6,0,0,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-2003,30,19.5,21.6,28.4,21.6,21.4,24.4,21.6,0,.9,SE,2
 02-Jun-2003,31,20,22.8,30.8,22.4,21.6,24.6,22.2,.2,.9,NW,4
 03-Jun-2003,30,20.5,22.4,30.4,22.8,22.4,24.2,22.6,4.9,9.1,S,4
@@ -258,8 +210,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-2003,28.5,19.5,21.4,26,21.8,21.4,22.6,21.6,13.8,.8,SE,2
 29-Jun-2003,30.5,17.5,20.2,28,21.2,19.8,23.4,21.2,0,8.2,SE,2
 30-Jun-2003,30,18.5,20.8,30.2,21.4,20.8,23.6,21.4,0,.2,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-2003,29.5,18.5,20.8,29,20.8,20,23.2,20.6,0,0,NE,2
 02-Jul-2003,28.5,18.5,20,26.2,20.8,19.8,23.6,20.8,4.4,3.9,SE,2
 03-Jul-2003,17.5,16.5,19.4,24,20,19.4,21.6,20,2.7,0,SE,2
@@ -291,8 +241,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-2003,30,17,20.2,28.2,21.6,19.8,23,21,0,0,NE,2
 30-Jul-2003,27.5,-999,21,26.4,21.8,20.6,23.2,21.4,25.8,3.2,SE,2
 31-Jul-2003,29.5,-999,20.8,29.2,21.2,19.8,23.8,20.8,0,0,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-2003,29,,21.2,28.2,22.8,21.2,24.2,22,0,0,C,
 02-Ago-2003,29,,21.6,27,20.4,21.6,24.2,20.4,24.2,25.8,NE,2
 03-Ago-2003,30,,20.6,30,20.8,20,25.4,20.8,11.4,7.9,SW,2
@@ -324,8 +272,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-2003,25,,16.2,24.2,17.2,16.2,17.2,16.2,0,0,N,6
 30-Ago-2003,25.5,,16,17,16.2,15.6,14,17.2,0,0,C,
 31-Ago-2003,27.5,,15.6,27.2,20,15.4,20.6,19.6,0,0,NE,4
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-2003,30.5,,19.2,30.2,20.8,18,23,17.8,0,0,N,2
 02-Sep-2003,31.5,,20.6,30.6,23,19.6,24,21.6,0,0,NE,2
 03-Sep-2003,32.5,,21.8,32.2,17,20.2,24.6,17,0,.5,NW,4
@@ -356,8 +302,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-2003,33,,24.2,32.8,25.4,22.2,24.6,24,0,0,NE,4
 29-Sep-2003,26,,21,24.2,21.4,20.6,21.8,20.2,11.6,.4,NW,2
 30-Sep-2003,30.5,,21,29.8,21.2,20.6,23.6,20.6,0,0,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-2003,32.5,,23.4,31,24.6,22.2,25.2,23.6,0,0,NE,4
 02-Oct-2003,32.5,,22.8,30.8,22.8,22,24.6,21.4,0,.2,C,
 03-Oct-2003,31.5,,22.2,30.2,21.8,20.6,25,20.4,0,1.5,NW,8
@@ -389,8 +333,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-2003,29.5,,19.8,30.2,23.2,19.4,24.6,21,5.4,3,C,
 30-Oct-2003,33.5,,23,31,23,20.4,23.8,22.6,0,4,SE,2
 31-Oct-2003,31,,24,30,22,22.2,24.8,21.8,0,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-2003,23.5,,22,21.8,19.2,21.6,21,19.2,.3,37.2,SE,6
 02-Nov-2003,20.5,,16.6,17.8,16.8,16.2,17.2,16.8,8.8,3.3,NW,2
 03-Nov-2003,27.5,,23.6,24.8,21,17.8,20.8,20,0,0,NE,2
@@ -421,8 +363,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-2003,30,,21.4,26,22,21.2,25.4,21.6,1,1.6,S,2
 29-Nov-2003,28,,24,23.8,22.8,23,22.4,21.6,0,7,C,
 30-Nov-2003,32,,24.8,29.8,24.6,22.8,24.6,23.6,0,0,NE,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-2003,30.5,,24.2,27.6,24.2,22.8,24.2,23.6,.3,0,C,
 02-Dic-2003,32,,25.6,31,24.6,23.4,25.4,24,0,.2,NE,4
 03-Dic-2003,31,,24,27,24.2,23.8,25,23.8,.2,3.6,SE,2
@@ -454,8 +394,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-2003,27,,22.4,24.8,22,22.4,23.4,22,62.1,25.8,SE,2
 30-Dic-2003,30,,21.6,26.8,22.8,21.6,24.2,22.4,5.7,8.5,C,
 31-Dic-2003,28,,22.2,27.4,22.8,22,24.4,22.8,.4,21.5,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-2004,30.5,,24.2,26.6,24.6,24,25.4,24.4,19.3,1.6,C,
 02-Ene-2004,28.5,,23.2,26.2,23.6,23.2,24.2,23.2,103.7,.2,NE,2
 03-Ene-2004,29,,22.4,26,24.2,22.4,24.8,23.2,51.6,5.7,N,2
@@ -487,8 +425,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-2004,34,,23.8,33.6,24.6,23,28.2,24,4.2,0,W,4
 30-Ene-2004,33,,24.4,33,22,24.2,27,22,0,2.8,N,6
 31-Ene-2004,34,,24.4,32.8,22,24.2,26.8,22,0,0,N,4
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-2004,30.5,,22.4,32.6,23.2,22.4,26.8,23.2,20.1,2.3,NE,2
 02-Feb-2004,33,,24.2,32.2,25.2,23.2,26.4,25.2,0,0,N,2
 03-Feb-2004,33,,23,32,23.8,23,27,23.8,0,3.6,N,2
@@ -518,8 +454,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 27-Feb-2004,34.5,,25,35.4,26.4,24.6,25.6,25.8,0,0,C,
 28-Feb-2004,35,,25.2,34,25,24.8,27,24.8,7.9,0,NW,6
 29-Feb-2004,34.5,,24.6,34,25.2,24.4,27.2,25.2,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-2004,34.5,,26,34.4,26.4,25.8,34.4,26.4,0,0,NE,4
 02-Mar-2004,35,,26,33.8,25.8,25.6,27.8,25.4,0,0,N,6
 03-Mar-2004,29,,24.6,26.4,23,24.6,26.2,23,0,18.3,NE,4
@@ -551,8 +485,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-2004,30.6,,24.2,23.6,22.6,23.2,23.6,22.6,0,13.6,C,
 30-Mar-2004,31,,22.8,26,22.6,22.8,24,22.4,.9,0,E,2
 31-Mar-2004,31.5,,22.6,30.6,23.8,22.4,26.4,23.8,0,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-2004,31,,25,28.6,24.4,25,27.8,24.2,0,4,C,
 02-Abr-2004,29.5,,23.4,28,24,23.4,27,24,64.4,0,S,4
 03-Abr-2004,31.5,,23.8,32.2,25,23.8,29,25,0,3.8,N,2
@@ -583,8 +515,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-2004,28.5,,20.8,26,21.8,20.8,25.2,21.8,0,0,C,
 29-Abr-2004,30.5,,22,26.2,22.4,22,25.6,22.4,0,0,C,
 30-Abr-2004,33.5,,21.8,26.4,23,21.8,24.4,22.8,10.2,1.2,S,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-2004,23.5,,22.4,19,19.2,22.4,18.8,19.2,0,26.8,NE,2
 02-May-2004,29,,20.2,28.6,21.8,20.2,25.6,21.8,0,0,C,
 03-May-2004,30,,22,26.8,22.4,22,24,22.4,0,.3,NE,2
@@ -616,8 +546,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-2004,25.5,,18.2,24.8,19.4,18,24,19.6,0,0,E,2
 30-May-2004,28.5,,20.2,22,22,20.2,22,22,0,1.2,C,
 31-May-2004,26.5,,21,25.8,20.8,21,24.6,21,0,6.3,S,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-2004,25,,20.4,24,20.6,20.4,23,20.6,,,S,2
 02-Jun-2004,22,,18.6,22,19.4,18.6,20.8,19.4,,,N,2
 03-Jun-2004,-999,,16.8,22,-999,16.8,21.8,-999,,,NE,2
@@ -648,8 +576,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-2004,27.5,,20.6,26.4,21.2,20.6,24.6,22.2,,,C,
 29-Jun-2004,29,,20.4,26.4,22.2,20,24,22,,,NE,4
 30-Jun-2004,30,,21.4,29.4,23.6,21.4,27.8,23.6,,,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-2004,30,,22.4,28.2,20.6,22.2,24.8,20.6,-999,0,,
 02-Jul-2004,23,,21.2,23,19.8,21,22.8,19.8,0,3.3,,
 03-Jul-2004,26.5,,20.2,24.4,20.8,20.2,23.2,20.6,3,0,,
@@ -681,8 +607,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-2004,29.5,,22.4,30.2,22.8,22.2,29.4,22.6,5.4,0,,
 30-Jul-2004,23,,15,17,15.2,15,16.4,15.4,49.3,0,,
 31-Jul-2004,23,,15.6,21.8,17.2,15.6,19.4,17.2,0,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-2004,16.5,-999,16.6,25,20,16.6,25,20,0,0,,
 02-Ago-2004,28.5,-999,18,28,22,18,24.4,21.8,0,0,,
 03-Ago-2004,29.5,-999,26,29.8,21.8,20,23.8,21.2,0,0,,
@@ -714,8 +638,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-2004,27,20,20.2,24,20,20.2,22.8,19.4,0,2.3,,
 30-Ago-2004,30.5,18.5,19.6,29.8,22.8,18.8,27.4,22.4,0,0,,
 31-Ago-2004,32.5,19,23,31.6,23,22.2,26.6,23,0,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-2004,33,20.5,23.4,32.6,23.6,22.2,-999,23.6,0,0,,
 02-Sep-2004,32,21,24.6,31.6,23.4,23.8,-999,22.2,0,0,,
 03-Sep-2004,25,20,21.4,24.8,20.2,20.4,-999,20.2,0,20.8,,
@@ -746,8 +668,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-2004,32.5,20,23.6,30.8,24,22,27.4,23,0,0,,
 29-Sep-2004,22,21.5,22.8,27,22.6,22.6,24.8,22.4,0,0,,
 30-Sep-2004,23,20.5,20.4,24,20,20.4,23.2,20,14.7,15.1,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-2004,22.5,19.5,19.8,22,20.2,19.8,21.4,20.2,7.6,4.6,,
 02-Oct-2004,31,19.8,20.8,29,23.2,20.8,26,22.8,0,0,,
 03-Oct-2004,28.5,19.5,19.4,28,21.6,19,27,21.6,81.4,.8,,
@@ -779,8 +699,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-2004,31.5,20,24.2,30.2,23.4,23.8,24.8,23.4,0,0,,
 30-Oct-2004,34,21,25.2,33.6,23.8,24.8,29.8,23.6,0,0,,
 31-Oct-2004,26,22.5,23.8,25.8,21.8,23.8,24.8,21.6,4.7,4.3,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-2004,22,20,24.2,27.2,22.2,23.2,26,22.4,0,7.8,,
 02-Nov-2004,32,21,23.8,31.4,24.4,23.4,25,24.2,0,0,,
 03-Nov-2004,30.5,20.5,23.2,28.2,24.2,23.2,26.6,24.2,2,1.7,,
@@ -811,8 +729,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-2004,31.5,21.5,24.4,31,24.8,24.2,29,24.2,64.9,11,,
 29-Nov-2004,20.5,20.5,21.8,23.8,20.4,21.8,23.6,20.4,120,44.7,,
 30-Nov-2004,32.5,20,23,32.6,24.6,22.6,26.6,23.6,0,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-2004,22.8,21.5,23.4,33.4,22.8,23,29.8,22.8,0,14,,
 02-Dic-2004,34,21.5,24.2,33,24.4,23,27.8,24,0,0,,
 03-Dic-2004,31,21.5,23.4,27.8,21.8,22.8,27.4,21.8,46,0,,
@@ -844,8 +760,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-2004,33.5,21.5,22,29,23.8,22,29,23.4,0,0,,
 30-Dic-2004,31.5,21.5,22.8,30.6,24.6,22.6,26.6,24.2,0,0,,
 31-Dic-2004,30.5,21,21.8,29.8,24.8,21.8,26.6,24.8,24.7,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-2005,29.5,22,24.2,27.2,23.2,24,25.8,23.8,0,0,,
 02-Ene-2005,32.5,22,22.4,32.4,24.8,22,24.6,24.8,4.5,0,,
 03-Ene-2005,26.5,21.5,22,26,21.8,22,25,21.8,58.2,7,,
@@ -877,8 +791,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-2005,32,21.5,24.4,29.6,24,24.2,25.6,24.2,.2,32.7,,
 30-Ene-2005,30,22.5,25.4,27,24.6,25.2,26.6,24.6,4.3,0,,
 31-Ene-2005,32,22.5,22.4,30,24.8,22.4,27.4,24.8,.6,6.4,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-2005,27.5,22.5,22.4,20,19.4,22.8,29.4,19.6,10.8,10,,
 02-Feb-2005,25,19.6,29,25.2,20.4,22,22.8,20.4,0,.3,,
 03-Feb-2005,24,19.5,20.4,23.4,20,20.6,22,20,0,1.4,,
@@ -907,8 +819,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-2005,31,25,25,29.2,26.6,24.2,26.8,26.2,0,0,,
 27-Feb-2005,31,25,25,29.8,24.6,24.8,29.8,24.8,1,0,,
 28-Feb-2005,32,25,23.6,29.8,26.4,23.4,30,26.6,.3,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-2005,26.5,25.9,23,24.6,23.8,22.8,24.4,24,1.6,12.4,,
 02-Mar-2005,29.5,23.5,20.8,29,24.8,21.2,25.8,25,53.4,0,,
 03-Mar-2005,31.5,24.5,21.6,30,25.4,21.6,29.2,25.6,0,0,,
@@ -940,8 +850,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-2005,32,24.5,23.8,31.6,24.8,23,30.2,25,0,0,,
 30-Mar-2005,32.5,24.5,23.4,31.8,24.8,23,30.2,25,0,0,,
 31-Mar-2005,32.5,24.5,21.2,26.2,23,21.4,24.8,23.2,50,4.7,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-2005,32.5,24,23.4,30,25,23.2,25,25.2,0,0,,
 02-Abr-2005,30.5,25,25.6,25.4,23.6,23.4,25.8,23.6,0,3.7,,
 03-Abr-2005,33,20.5,23.4,32.8,23.2,22.4,32,23.6,0,33.5,,
@@ -972,8 +880,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-2005,22.5,17.5,16,18.4,16,16.2,17.8,16.4,3.8,0,,
 29-Abr-2005,23.5,16.5,17.8,21.4,19,17.6,20.8,19.2,0,0,,
 30-Abr-2005,24.5,18,18,23.4,19.8,18,23.2,19.8,3.2,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-2005,27.5,19.5,21.2,22.6,21.4,19.6,22.4,22,0,0,,
 02-May-2005,28,20.5,20.4,27.4,22,20.2,26.8,22.4,0,0,,
 03-May-2005,30,20,21.2,29.4,23.2,21,29,24,0,0,,
@@ -1005,8 +911,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-2005,31,21,22.8,31,25,20,25.8,25,0,0,,
 30-May-2005,26.5,20,23,26,24,22.8,22.4,21,10.04,0,,
 31-May-2005,31.5,18.5,20.8,28.8,22.8,19.8,27,22.4,0,0,,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-2005,29.5,18.5,24.8,29,22.6,22.8,29,23,0,0,C,
 02-Jun-2005,29,19.5,21.8,28.6,23,21.6,23.8,22.8,0,0,NE,2
 03-Jun-2005,29.5,21.3,22,28.2,25.4,21.8,24,25,0,0,SW,2
@@ -1037,8 +941,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-2005,30.5,20,20.6,29.9,22.6,20.8,26.6,22.8,0,0,NW,2
 29-Jun-2005,30.5,20,21.4,29,23.4,21.4,25,23.4,17,0,SE,2
 30-Jun-2005,28.5,21.5,22.4,28.8,22.6,22.2,27.8,22.8,12.2,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-2005,29.5,19,23.3,29,25,23,24.4,24.8,0,0,SE,2
 02-Jul-2005,30.5,21,26.4,29,22.8,25,28.8,22.6,1.8,0,C,
 03-Jul-2005,30.5,20,20.4,29.5,23,20.4,28.8,23,0,0,C,
@@ -1070,8 +972,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-2005,31,16.5,20,21,23,19.8,25.6,23,0,0,NE,2
 30-Jul-2005,31,20,21.4,30.2,22.6,21.2,29.6,22.8,0,0,NE,2
 31-Jul-2005,31.5,19.5,22.2,30.5,23.6,22.2,28,23.6,0,0,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-2005,32.5,19.5,22,31.4,24.4,21.8,28.5,24,0,0,C,
 02-Ago-2005,31.5,21.5,23,32,23.2,22.6,28.6,23.6,0,0,NE,4
 03-Ago-2005,32,20.5,22,32,24.2,22,30,23.8,0,8.4,NE,2
@@ -1103,8 +1003,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-2005,34,20.5,24,33,25.2,23.2,30,25,0,0,C,
 30-Ago-2005,33,20.5,23.2,30.2,24.6,22.4,28.8,24.4,0,0,C,
 31-Ago-2005,31.5,21.5,24.2,31.2,21.2,23,29.2,21.2,0,31.4,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-2005,21.5,18,17.6,17.4,16.2,17.6,17.2,15.6,,,C,
 02-Sep-2005,18.5,13.5,13.6,16.8,15.8,13.8,15.9,16,,,C,
 03-Sep-2005,26,13.5,17.2,25.4,19.4,17.4,23,19.6,,,NE,2
@@ -1135,8 +1033,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-2005,31,16.5,22.8,30,23,22.2,29,22.4,,,NE,4
 29-Sep-2005,32,19.5,23.8,30.2,24.8,22.4,29,24,,,C,
 30-Sep-2005,32.5,20.5,22.8,29.9,24.2,22.6,29.4,23.8,,,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-2005,32.5,20,23,31.2,22.9,22,27.6,22.2,-999,0,C,
 02-Oct-2005,31.5,20,23.2,26.8,23,23.2,26.6,22.8,0,0,C,
 03-Oct-2005,32.5,20.5,23,30.6,23.8,22.2,26.6,24,0,0,NE,2
@@ -1168,8 +1064,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-2005,30,19.5,21.6,30,25.4,21.4,26.8,25,48,0,NE,2
 30-Oct-2005,32.5,19.5,26.2,30.6,24.4,25.6,28.2,24.2,40,0,NW,2
 31-Oct-2005,24.5,20.5,21.4,24,21.6,21.4,23.6,21.6,0,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-2005,27.5,19.5,19.6,25.8,21.8,19.6,24.4,21.8,0,1,C,
 02-Nov-2005,31.5,19,23,31.4,27.8,21.7,25.2,26.4,0,0,W,2
 03-Nov-2005,33.5,17,24.6,32.8,28,24.6,29.8,27.6,0,0,NE,4
@@ -1200,8 +1094,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-2005,31,22,23.4,29.4,24.8,23.2,29,24.6,5.8,8.2,C,
 29-Nov-2005,32.5,22,25,29.8,23.8,24.8,27.4,23.6,10,0,SE,4
 30-Nov-2005,31,21.5,25,30.8,28,24.8,30.2,27.8,2.9,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-2005,32.5,22,23,31.2,27.2,22,29.8,26.4,5.1,0,NE,2
 02-Dic-2005,29.5,13,22,29.8,23,21.6,29,23,28.2,0,SE,2
 03-Dic-2005,32,20,27.4,31.2,23.8,26.6,29.8,23.6,0,1.2,C,
@@ -1233,8 +1125,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-2005,29.5,20.5,23.4,29,22.2,23,28.6,21.8,6,3.3,C,
 30-Dic-2005,28,21,23.4,27.4,25.2,22.4,26.2,24.8,21.7,0,C,
 31-Dic-2005,33,20,21.2,29.8,25.6,21.2,27.6,25.4,3.5,0,SE,4
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-2006,27.5,21.5,23.2,27.8,25,22.2,26.2,24.8,0,5.8,C,
 02-Ene-2006,24.8,21.5,22.8,23.6,21.6,22.8,22.8,21.6,40,46.6,C,
 03-Ene-2006,29,20.5,21.6,28.6,21.8,21.8,25.6,22,2,0,NW,4
@@ -1266,8 +1156,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-2006,32,21,23.6,31.2,23.4,23.4,27,23.4,0,1.3,SE,2
 30-Ene-2006,32,20.5,23.8,30.8,26.8,23.6,25.8,24.8,0,0,C,
 31-Ene-2006,33.5,20.5,23.8,30.8,24.4,23.6,25.8,24,0,3.1,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-2006,32,21.5,23.2,25.4,22.4,22.8,23.6,22.6,,,SE,8
 02-Feb-2006,32.5,21.5,25.2,32,25.6,25,30.6,25.6,,,SW,2
 03-Feb-2006,33.5,21.5,25.2,33,25.6,24.4,30.4,25.2,,,SE,4
@@ -1296,8 +1184,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-2006,24,18.5,20.2,19.8,19.6,19.8,19.6,19.4,,,C,
 27-Feb-2006,31,19,25,30.2,24.8,24.8,30,24.6,,,C,
 28-Feb-2006,29.5,22,23.8,28.8,27.6,23.2,28.6,27,,,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-2006,30.5,22,22.4,29.8,27.6,22.2,29,27.4,3.6,0,C,
 02-Mar-2006,30.5,22.5,26,30,28,26,29.8,27.8,17,0,SE,2
 03-Mar-2006,30.5,20.5,23,29,28,22.8,28.6,27.8,82,0,C,
@@ -1329,8 +1215,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-2006,30.5,19.5,22.6,29.8,27.6,22.2,28.6,27.4,0,0,C,
 30-Mar-2006,29.5,22,22.6,29,24.6,22.6,28.8,24.4,16,20.5,SE,2
 31-Mar-2006,29.6,21.5,22.6,29.5,23,22.4,28.4,22.8,30.1,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-2006,29.8,20.5,22.4,29,23.4,22,28.8,23.2,.9,9,C,
 02-Abr-2006,30,21,25.6,29.8,26,24.4,29.6,26,0,0,C,
 03-Abr-2006,31,21,26.6,30.8,27.6,26,30.6,27.4,28.1,0,C,
@@ -1361,8 +1245,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-2006,32,20.5,22.8,30.8,27.4,21.8,30.6,27,0,0,C,
 29-Abr-2006,32,19.5,22.8,31.8,26.7,22.4,30,26,0,0,C,
 30-Abr-2006,30.5,20,26,30,26.2,26,27.8,26,0,0,NE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-2006,29.5,19.5,23,29,24,23,28.8,24.2,,,C,
 02-May-2006,29.5,18.5,20.8,29,24.8,20.8,28.8,24.4,,,C,
 03-May-2006,25.5,18.5,19.4,25,21.4,19.6,26,21.4,,,C,
@@ -1394,8 +1276,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-2006,30.5,16.5,19.8,29.8,22.4,19.6,29.6,22.2,,,C,
 30-May-2006,30.5,19,21.2,29.8,26,21.2,29.6,25.6,,,C,
 31-May-2006,30,20.5,22,29.8,24.8,22,29.6,24.6,,,NE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-2006,30.5,20,21,30,25.4,21,29.8,25.2,-999,0,C,
 02-Jun-2006,29.5,19,22.4,29,25.4,22.4,28.8,25.2,0,0,C,
 03-Jun-2006,31,19.5,24,30,25.4,23.2,28.6,25.2,0,0,C,
@@ -1426,8 +1306,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-2006,27,19.5,22.2,25.6,22,22.2,23,22,0,0,SE,2
 29-Jun-2006,27.5,19.5,20.4,26.4,22.6,20.4,26,21,0,0,C,
 30-Jun-2006,29.5,19.5,23,29,25.6,22.8,27.2,25.2,1.5,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-2006,29.5,20.5,23.6,27,22.4,23.2,24.6,22.4,0,.5,NE,4
 02-Jul-2006,28,20,21.6,27.2,22.8,21.6,24.4,22.4,7.8,0,SE,2
 03-Jul-2006,29.5,18,22,29.2,20.6,21.2,25,20.6,0,0,NW,2
@@ -1459,8 +1337,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-2006,26.5,20,23.6,25.4,22.4,23.4,25.2,22.4,23.2,3.4,C,
 30-Jul-2006,23,12,12.4,16.2,25,12.4,16,15.2,60,0,NE,2
 31-Jul-2006,27.5,11.5,15,25.4,20,15,25.2,20,0,0,NE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-2007,32.5,20,24.8,30.8,25.6,24.8,30,24.2,,0,C,
 02-Ene-2007,31,20.5,23.4,29.8,24.4,23,29.6,24,0,0,C,
 03-Ene-2007,29.2,20,23.4,28.6,24.2,23.4,28.4,24,87.2,0,SE,2
@@ -1492,8 +1368,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-2007,31.5,22.5,23.2,28.8,25.8,23,26,25.2,4.7,2.2,SE,2
 30-Ene-2007,31.5,22.5,24.2,30.6,25.2,23.8,26.2,24.6,46,0,NE,2
 31-Ene-2007,33,22.5,23.4,30.4,26.2,22.8,26,25.4,.1,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-2007,26.5,20.5,21.6,26.2,22.2,21.6,25.4,22.2,29.6,.2,C,
 02-Feb-2007,31.5,21,24.2,29.8,24.2,23.8,25.4,24.2,0,0,NW,6
 03-Feb-2007,33,22.5,24.4,31.8,26,24.2,26.6,25.6,0,.1,NE,2
@@ -1522,8 +1396,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-2007,32.5,19,22.6,30.2,24.4,21.6,28.4,24.2,0,0,NE,2
 27-Feb-2007,31.5,21,22.4,31.6,22.4,22.4,29.6,22.2,0,10.1,SE,2
 28-Feb-2007,31.5,20.5,23,31.6,24.4,22.6,27.6,24.4,0,0,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-2007,31.5,22,23,27.2,25,23,26.6,25,-999,,C,
 02-Mar-2007,30.5,20,22.2,26.4,23.2,22.4,26.2,23.4,,,SE,4
 03-Mar-2007,27.5,21.5,22.6,23.6,24,22.6,23.2,23.4,,,SE,2
@@ -1555,8 +1427,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-2007,30,21.5,22.2,27.8,22.6,22.2,25.8,22.6,,,SE,2
 30-Mar-2007,31.5,20.5,21.8,31.8,24,21.4,30,24,,,NW,2
 31-Mar-2007,31.5,19.5,21.2,30.8,23.4,21.2,28.8,23.4,,,S,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-2007,28.5,20.5,21.2,25,22.2,21.2,23.6,22.2,,,SE,2
 02-Abr-2007,31.5,19,21.6,31,24.4,21.4,28.2,24.4,,,N,2
 03-Abr-2007,30.1,21,23.2,31,23.2,23.2,28.8,23.2,,,N,2
@@ -1587,8 +1457,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-2007,20.5,16.5,18.2,25,20.4,18.6,23.2,20.4,,,NW,2
 29-Abr-2007,28,17.5,18,27.6,20.2,18.4,25.2,20.2,,,NE,2
 30-Abr-2007,29.5,16.5,20.6,28.4,22.2,20.4,28.6,22.2,,,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-2007,31,18,23.4,30.6,21.4,23,28.4,21.6,,0,NE,2
 02-May-2007,31.5,19,22.6,30.2,22.8,22.4,28.6,23,0,0,NE,2
 03-May-2007,30,21,23,29,24,23,26.4,24,0,7.6,NE,2
@@ -1620,8 +1488,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-2007,22.5,14.5,21.8,22.4,18.8,22,22.4,18.8,0,12.3,C,
 30-May-2007,19,15,16.2,17.2,15.6,16.4,16.6,15.6,3.1,0,NE,4
 31-May-2007,19,14,17.4,18.4,16.4,16.6,17.4,16.4,0,0,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-2007,29.5,16.5,19.6,29,21,19.6,25.6,21,,0,C,
 02-Sep-2007,31.5,17,20.8,31,21.8,20.2,24.6,21.8,0,0,NW,2
 03-Sep-2007,32,17,23,31.4,24.4,21.8,25.2,24,0,0,NW,2
@@ -1652,8 +1518,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-2007,33,14.5,24.2,33.2,25.4,23.6,26.8,25,0,0,C,
 29-Sep-2007,34,18.5,23.2,32.8,22,23.6,27.8,22,0,0,C,
 30-Sep-2007,32,20,23.8,31.8,23.2,22.8,30.6,24,.1,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-2007,33.5,19,23,32.4,23.6,22.8,30.4,23.4,0,0,C,
 02-Oct-2007,33.5,19,22.6,32.8,23.4,21.8,27.8,23.4,0,0,NE,2
 03-Oct-2007,33.5,19,24,33.6,23.6,23.8,31.8,23.8,0,0,NE,2
@@ -1685,8 +1549,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-2007,31,20.5,23.4,29.2,22.6,23.2,24.2,22.2,1.5,1.1,NE,2
 30-Oct-2007,32.5,20,23.6,32,23.8,22.2,24.8,32.5,0,0,C,
 31-Oct-2007,32,21.5,23.4,31.2,23.4,22.4,25.2,23.2,0,12.2,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-2007,31,21,22.6,29.2,24.4,22.2,25.4,24,.4,0,NW,2
 02-Nov-2007,32,22.5,23,29.4,25,25,26.4,24.6,22.2,3.5,SE,4
 03-Nov-2007,30,21.5,24,29.6,24.8,23.8,26.6,24.2,50.4,4.5,C,
@@ -1717,8 +1579,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-2007,27,21.5,27,21.2,20.2,25.6,20.8,20.2,.2,41.3,NE,4
 29-Nov-2007,32,19,22,31.8,21.2,21.2,29.2,21.2,0,0,SW,4
 30-Nov-2007,33,21,23.4,30.2,22.6,22.2,25.2,22.2,0,0,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-2008,30.5,20,25,25.4,22.6,24.6,24.8,22.6,,3.5,C,
 02-Ene-2008,29,21,24,26.6,22.2,23.8,25.4,23.2,.7,9.3,SE,2
 03-Ene-2008,30,20.5,22.4,28,23.6,22.4,24.2,23.4,0,0,NE,2
@@ -1750,8 +1610,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-2008,31.2,20,21.6,27.6,24,21.2,25,23.6,9,1.9,NW,2
 30-Ene-2008,30.2,20.2,22,27.4,26,22,26.2,25.4,10.6,22.4,SE,2
 31-Ene-2008,25.2,20.2,21.6,27.8,23.2,21.8,26,23.2,50.8,10.2,SE,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-2008,27.2,20.2,22.2,24.4,24.2,22.2,24.6,20,.44,6.5,SE,
 02-Feb-2008,27.2,21,22.8,25.2,24.4,22.8,25.2,24.4,6.8,0,SE,2
 03-Feb-2008,24.2,20.2,21.6,22.2,21.6,21.8,22.2,21.8,30.15,15.9,NE,2
@@ -1781,8 +1639,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 27-Feb-2008,30.2,21.2,23.4,28.4,23,23,24.8,22.8,0,19.2,NE,2
 28-Feb-2008,28,20.2,22.4,27,22.8,22,24.6,22.6,1,13.8,NE,2
 29-Feb-2008,29.4,19.2,21.2,28.8,29.8,21,28.4,32.6,1.5,3.8,SE,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-2008,32,14.5,22.2,31.2,28.2,22.2,27.8,26.6,-999,4,S,2
 02-Mar-2008,32,20.2,22.2,26.8,23.2,22.2,24.6,23,40.5,0,SE,2
 03-Mar-2008,30,20.2,21.4,28.6,22.4,21.4,25.4,22,2.1,2.4,NW,4
@@ -1814,8 +1670,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-2008,25,19,21.6,21.2,21.4,21.4,21.2,21.2,0,31.1,SE,-999
 30-Mar-2008,31.2,16,21.2,29.4,23.8,20.4,26.6,23.4,0,0,SW,2
 31-Mar-2008,32,20,22,31.8,24,21.8,28.8,23.6,0,2,NW,4
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-2008,26,20.2,21.4,25.4,22,21.2,23.8,22,0,0,SE,2
 02-Abr-2008,28.2,20.2,22.6,27,26.2,22.4,25.8,26,.4,0,NE,2
 03-Abr-2008,30,19,19.8,23,20,19.8,22,20.2,60.8,7.8,NW,2
@@ -1846,8 +1700,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-2008,31,21.2,23,31.2,25,23,30.8,24.6,11.9,0,NW,
 29-Abr-2008,30.2,22.2,23.6,30,25.4,23.4,28,25.2,0,0,N,4
 30-Abr-2008,26,22.2,23.4,21.8,19.2,23.4,21.8,19.2,5.4,34.7,SE,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-2008,20.2,15.2,17,19.8,17,17,19,17,-999,0,C,
 02-May-2008,19.2,16,16.8,18.2,17,16.8,18,17.2,1.8,0,SW,2
 03-May-2008,26.2,16.2,18,25.6,19.8,17.8,24.2,18.8,1.3,0,NW,2
@@ -1879,8 +1731,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-2008,28.6,19,23.4,21.6,20,23,21.4,19.6,0,0,NW,2
 30-May-2008,29.2,20,21.6,18,15.6,21.8,18.2,16,13.7,44,C,
 31-May-2008,22,13.2,15.8,20.4,16.2,15.8,21,16.6,0,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-2008,20.2,14,16.4,18.6,16,16.6,19,16.6,-999,0,NE,2
 02-Jun-2008,30,15,16.6,19,17.6,16.8,19.2,18,0,0,NE,2
 03-Jun-2008,22,15.2,16.6,20.2,18,16.8,20.6,18.6,0,0,NW,2
@@ -1911,8 +1761,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-2008,25,17.2,19,22.2,20.8,19,22.4,21,0,0,SE,
 29-Jun-2008,28,17.2,19.2,27.4,22.2,19.4,27.6,22.6,2.5,0,SE,
 30-Jun-2008,29,17,18,28,22.2,18.4,27.8,22.6,0,0,NW,2
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-2008,27,19,20.4,26.2,21.4,,,,-999,7.8,SE,2
 02-Jul-2008,26,19,20,22.8,22.2,,,,1,0,NW,2
 03-Jul-2008,28.2,19,20.8,26.2,22.2,,,,0,0,NE,2
@@ -1944,8 +1792,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-2008,31.2,18.2,20.2,30.4,24.6,,,,0,0,N,
 30-Jul-2008,30,18,20.8,27,23.2,,,,29.5,0,SE,2
 31-Jul-2008,29.2,19,21.8,28,24.6,,,,0,0,NW,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-2008,31,20.2,21.8,29.8,26,21.8,30,26,0,0,NE,2
 02-Ago-2008,30,20,22.8,28,24.6,22.6,28.8,25.2,0,0,SE,
 03-Ago-2008,31,21,22.4,29,30.8,22.6,30,30.8,10.8,20,NW,4

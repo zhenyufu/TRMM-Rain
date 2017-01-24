@@ -3,8 +3,8 @@ import urllib2
 from bs4 import BeautifulSoup
 
 
-myLoc = "000691"
-myFile = "madre4.csv"
+myLoc = "155518"
+myFile = "cusco8.csv"
 myTipo = "CON" # red is CON, yellow is SUT
 
 ##############

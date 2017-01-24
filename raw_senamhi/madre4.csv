@@ -1,5 +1,3 @@
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-1984,27,21.4,23,26.4,23.6,22.2,24,22.8,13,0,C,
 02-Abr-1984,31.6,21,22.4,29,23.2,22,24,22.4,17,12,N,6
 03-Abr-1984,27,20.8,21.4,26,23.4,21,23.2,22.4,39,1,N,6
@@ -30,8 +28,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-1984,24,20.4,21,25,21,20.8,22,20,4,3,N,6
 29-Abr-1984,29,19.8,21,29,25,20.8,25,24,0,0,N,9
 30-Abr-1984,24,20.8,21.4,22,21,21,21,20.8,24,26,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-1984,24,19.8,20.6,23,19.6,20.2,21,19.2,1,0,N,6
 02-May-1984,28.4,18.4,20,28,24,19,26,22,0,0,N,6
 03-May-1984,28.4,21,22,28,25,21.4,25,24,0,0,N,6
@@ -63,8 +59,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-1984,29,22,23,28,25,22,24.6,24,1,0,NE,9
 30-May-1984,24,21,22,23,19,21.2,22.4,18.3,10,5,N,6
 31-May-1984,22,16.8,17.4,21.4,20,16.8,19.2,19,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-1984,28,16.4,17.8,27.4,24,16.6,23,23,0,0,N,9
 02-Jun-1984,28.4,20.6,21.4,28,22,21,24,21.8,3,16,NE,9
 03-Jun-1984,27.2,19.4,21,26.4,22.4,20.4,23.6,22,10,0,N,6
@@ -95,8 +89,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-1984,24,17.2,18.4,23.8,21,18,21.4,20,2,0,C,
 29-Jun-1984,23,18.4,19.2,22.4,19.8,18.4,21.4,19,2,0,NE,9
 30-Jun-1984,25,18.4,19.4,24,22,19,22,21,0,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-1984,29,19.4,20,26,22,19.8,22,21,.5,0,N,6
 02-Jul-1984,28,19.4,20,28,22,19.4,24,21,0,0,N,6
 03-Jul-1984,28.4,19.2,20,28,22.4,19.4,23,21.8,0,0,N,6
@@ -128,8 +120,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-1984,24.6,18.4,20,24,21,19.8,21.4,20.4,3,0,N,6
 30-Jul-1984,26,18.4,19,25.4,20.2,18.8,22,19.8,0,0,N,6
 31-Jul-1984,28.4,16,17,28,22.4,16.4,22.6,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-1984,27.4,19.4,21,25,22.4,20.4,23,22,0,0,C,
 02-Ago-1984,28.8,19.8,20.4,28.4,21.4,20.2,24,21,2,8,N,12
 03-Ago-1984,28.2,20.4,21.2,27.4,22.6,21,23.6,22,1,.5,C,
@@ -161,8 +151,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-1984,21,15.2,16,26,21,15.6,20,19,0,0,NE,6
 30-Ago-1984,26.8,17,18.4,27,20.4,17.8,18.6,21.4,0,0,N,6
 31-Ago-1984,29,13.6,14.8,29,21,14.4,20.4,20,0,0,NE,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-1984,29.6,14,16.4,30,20.4,16,22.4,19.2,0,0,N,6
 02-Sep-1984,30.6,14.8,16,30.4,22.4,15,21.6,20.4,0,0,NE,9
 03-Sep-1984,30.2,18,19,29.6,23,18.2,23,20,0,0,C,
@@ -193,8 +181,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-1984,20.8,15.4,16.8,20.8,18.4,15.8,18.6,18,2,0,N,6
 29-Sep-1984,27.4,17.2,19,26.4,20.4,18,21.6,20,0,0,N,6
 30-Sep-1984,29,17.4,19.6,29.4,23,19,24,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-1984,30.8,19,21.4,30.4,22.8,20.8,24,22,0,0,N,6
 02-Oct-1984,32,19.8,21.4,31,24,20.2,27,23,0,0,N,6
 03-Oct-1984,29.8,19.8,21.4,28,23,21,25.4,22.6,0,0,N,9
@@ -226,8 +212,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-1984,30.2,22,24,28,24,23,25,23,0,0,N,6
 30-Oct-1984,24.4,20.6,22,24,22,21,23,21.4,0,0,N,6
 31-Oct-1984,23,20.2,21,22,22,20.6,21,21,0,6,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-1984,28,20.8,21,28,23,20.6,24,22,3,0,N,6
 02-Nov-1984,31,19.6,21,31,24,20.4,25.4,23,0,0,N,6
 03-Nov-1984,26,21.6,23,27,23,22,25,22,10,4,C,
@@ -258,8 +242,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-1984,29,21.4,23,28,24,22,25,23,0,0,N,6
 29-Nov-1984,28,21.4,21.8,27,23,21.6,25,22,11,2,N,6
 30-Nov-1984,29,21.2,23,28.4,25,22,25,24,1,1,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-1984,28,22,22.6,27,24,22.2,25,23,13,2,C,
 02-Dic-1984,29,21.8,22.4,27.2,23,22.2,24,22,1,1,C,
 03-Dic-1984,29.8,21.8,22.2,27,25,22,24.4,23,12,10,N,6
@@ -291,8 +273,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-1984,30,20,21,29,25.6,20.8,24.4,24,1,0,N,6
 30-Dic-1984,29.4,22,22.8,27.2,24.4,22.4,24.4,23.8,7,5,N,6
 31-Dic-1984,30,21.8,23,29,24,22,25.4,23,0,0,NE,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-1985,29,22,22.8,28,25,22,25,24,5,4,N,6
 02-Ene-1985,29,21.8,23,26,25,22,24,24,0,0,N,6
 03-Ene-1985,26.4,21,23,25,22,22,23,21.4,6,5,N,6
@@ -324,8 +304,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-1985,31.4,18.6,19,31,25.2,18,27,23.4,0,0,N,6
 30-Ene-1985,28.4,21.2,22,28,24,21.4,24.6,23,13,15,C,
 31-Ene-1985,25.6,21.4,22,25.2,23,21.8,22.4,22,1,26,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-1985,30,21,22,28.8,23,21,24.4,22,20,0,NE,9
 02-Feb-1985,28.4,19.8,20.2,28,24,20,24,23,0,32,N,8
 03-Feb-1985,26.4,21,21.4,24,24,21,23,22.6,15,3,E,
@@ -354,8 +332,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-1985,30.4,20,22,30,23,21,26,22,0,25,N,6
 27-Feb-1985,30.2,21,21.6,29,24,21,26,23,0,2,N,12
 28-Feb-1985,29,21,22,27,24,21.2,24.2,23,5,9,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-1985,30.4,20,21,29,24,20,24.4,23,1,3,E,6
 02-Mar-1985,30,21,22,29,23,21,24.4,22,20,2,N,6
 03-Mar-1985,31,21,22,29.8,24.4,21,24.2,23.2,1,5,N,6
@@ -387,8 +363,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-1985,30,20,21,29,26,20.2,24.5,25,0,0,N,6
 30-Mar-1985,27,22,22.4,27,23.4,22,24,22.8,15,0,N,6
 31-Mar-1985,29,20.4,21,26,24,20.8,23.6,23,25,5,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-1985,30.2,20,21.2,30,24,20.8,26,23,0,0,E,9
 02-Abr-1985,27.4,21.6,22,27,24,21.8,24,23,4,2,NE,6
 03-Abr-1985,28,21,22,28,23.4,21.2,24,23,0,0,NE,12
@@ -419,8 +393,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-1985,29.4,20,23,28.4,24,22.2,23.8,23,1,0,N,6
 29-Abr-1985,26,21.8,22.2,23.4,20,22,22,19.8,1,0,N,6
 30-Abr-1985,29,19.4,20,28,24.6,19.8,25,23,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-1985,28,18,18.6,24,20,18.2,21,19,25,0,N,9
 02-May-1985,28,19.4,20,24,20,19.8,22.4,19.8,0,0,NE,15
 03-May-1985,28,18,19,22.2,19.8,18.4,19.4,18.8,1,0,N,6
@@ -452,8 +424,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-1985,28,20.6,22,28,23,21,23.4,22,3,0,N,6
 30-May-1985,26.8,19.4,22,26.4,21.6,21,21.8,20,0,28,N,6
 31-May-1985,30,18.2,19.8,28.5,22,19,22.4,20.5,0,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-1985,29,18,19.4,28.4,23,19,25,22,0,0,N,6
 02-Jun-1985,28,20.4,21,26,23,20.8,23,22,0,0,N,6
 03-Jun-1985,28,20.6,21,27.8,24.8,20.8,22.8,21,0,19,N,6
@@ -484,8 +454,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-1985,29.2,19.8,20.4,28,24,20,23,23,0,0,N,6
 29-Jun-1985,28,19,20.2,27,24,20,23.4,23,0,0,N,6
 30-Jun-1985,29,20.2,22,28,23.4,21,25,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-1985,28,19.7,21,28,23,20,25,22,0,0,N,6
 02-Jul-1985,28,18.4,19.6,27,23,19.2,23.6,22,0,0,N,6
 03-Jul-1985,24.6,17,19,23.4,19.4,18,20.4,18.6,27,2,N,6
@@ -517,8 +485,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-1985,30,20,21,29,24,20.4,24,23,0,0,N,9
 30-Jul-1985,29.2,19.4,21,29,23,20.4,24,22,0,0,N,6
 31-Jul-1985,28.6,19.6,22,28,24,20,24,23,3,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-1985,27,19,20.2,26.4,20.4,20,22.8,20,0,2,NE,9
 02-Ago-1985,27.2,15.2,17,21.2,18,16,18.8,17,7,0,NE,9
 03-Ago-1985,25,15.6,17,24,20,16.2,20,18,0,0,NE,18
@@ -550,8 +516,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-1985,30,17.8,18.6,27,22,18,22.2,21,0,0,N,6
 30-Ago-1985,31,18,18.8,30.4,22,18.4,24,21,0,0,C,
 31-Ago-1985,30.4,19,22.4,30,23,22,24,22,0,0,NE,9
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-1985,29,18,21.2,26.8,21,20.4,24,20.4,0,1,N,6
 02-Sep-1985,29,18.2,19.6,24.4,19.8,18.4,19.4,18.4,24,0,N,6
 03-Sep-1985,27.2,17,18.2,26.4,23,17.6,22.8,22,0,0,N,6
@@ -582,8 +546,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-1985,28.4,20.6,22.4,27.1,24.4,21.8,23.4,22.6,7,7,N,6
 29-Sep-1985,22,17,18,21.8,18.8,17.6,19,18,0,0,C,
 30-Sep-1985,27,17,19,26,21.8,18.8,21.2,20,0,0,NE,9
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-1985,28,19.8,21,28,22,20.8,23.4,21.8,0,0,E,15
 02-Oct-1985,30,18.4,22,29,23,21.8,24,22.2,0,0,NE,9
 03-Oct-1985,29,20.6,21.4,28.4,22,21,24,21.4,2,0,N,6
@@ -615,8 +577,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-1985,30,21,22.2,29,23.6,22,24.8,22.8,3,0,N,6
 30-Oct-1985,28,21.2,22.4,25,23,21.8,23.8,22,0,0,N,6
 31-Oct-1985,29.8,18,21,29.4,22,20.8,24.2,21,0,15,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-1985,30,19.4,21,29.4,25,20.6,24.2,23,3,0,N,6
 02-Nov-1985,29,20,22,28,24,21.4,25,23,26,0,N,6
 03-Nov-1985,26.4,18,19.8,25,23,18.4,23.6,22,2,0,N,6
@@ -647,8 +607,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-1985,30,18.6,20,29.4,23,19.8,23.6,22,0,0,N,6
 29-Nov-1985,31,19.8,21.2,31,22,20,24,21.2,0,0,N,6
 30-Nov-1985,31,19.4,21.4,30.4,23,21.2,24.2,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-1985,32,20.6,22.2,32,23,21.8,25,22,0,0,N,6
 02-Dic-1985,30,20.6,22.6,29.6,23.4,22,24,22.8,20,0,N,6
 03-Dic-1985,29.6,20,21,29.4,23,20,25,21,9,0,N,6
@@ -680,8 +638,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-1985,29,21.4,22,28,24.8,21.8,22,23.4,5,21,N,6
 30-Dic-1985,30,20.4,22,27,22,21,24,21.3,0,0,N,6
 31-Dic-1985,28.4,20.2,21,28,23,20.4,23.6,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-1986,30.4,20.2,21.2,29.8,24,20.6,24.6,23.6,0,0,N,6
 02-Ene-1986,30.4,20.4,21.4,27,24.8,21,23.8,23.4,0,0,NE,9
 03-Ene-1986,31,19.4,20.8,30,26,20.4,25,23.8,0,0,N,6
@@ -713,8 +669,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-1986,30,21,22,29.2,24,21.8,25,23,0,0,N,6
 30-Ene-1986,31,22,22.4,30.4,23.4,22,26,22.8,0,1,N,6
 31-Ene-1986,29,21.8,22.4,27.4,24,22.2,25,23,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-1986,25,21.8,22.2,24.8,21.8,22,23.6,21,57,17,C,
 02-Feb-1986,26,20.2,21,25.4,22,20.8,23.2,21.8,19,3,N,6
 03-Feb-1986,29,20,20.8,29,24,20.4,24,23,0,0,NE,12
@@ -743,8 +697,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-1986,30,19.8,20.8,27.6,23.8,20.4,25,22.4,12,0,C,
 27-Feb-1986,27.4,20.6,21,27,24,20.8,23.8,22.6,0,0,N,6
 28-Feb-1986,26,20.6,21,23.8,22.4,20.8,22.4,21,27,11,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-1986,28,20.8,21.6,28,21.4,21.4,24.2,21,0,21,N,6
 02-Mar-1986,28.4,20.4,21.6,25,24,21.2,23.2,23,21,.5,N,6
 03-Mar-1986,29.5,19.2,20,29,23.8,19.8,24,23,0,0,NE,9
@@ -776,8 +728,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-1986,29,20,22,25,23.4,21,22,22.4,19,0,N,6
 30-Mar-1986,31,20.2,21,30,23.2,20.4,25.4,22.2,0,0,NE,15
 31-Mar-1986,31,18.2,19.6,29.4,24,19,25,23,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-1986,30,21.8,22.4,29.8,23.6,22,24.4,23,0,0,N,6
 02-Abr-1986,27.8,21.8,22.4,27,24,22,24.6,23,0,2,C,
 03-Abr-1986,30.4,22,22.4,30,25,22.2,25,23.8,1,0,N,6
@@ -808,8 +758,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-1986,25.2,20.4,21.4,24.4,21.2,21,22,20.8,5,0,N,6
 29-Abr-1986,26.8,19.4,20.4,26.4,23,20,22.8,22,5,0,N,6
 30-Abr-1986,28.6,20.8,21.8,28,23,21,25,22,0,2,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-1986,28,21,20.6,26.8,22.4,20,23.4,21.8,12,0,N,6
 02-May-1986,27,20.4,21,26.4,24,20.8,24,22,0,0,N,6
 03-May-1986,30,18.6,20,29.4,22.4,19,24,21.8,0,0,NE,9
@@ -841,8 +789,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-1986,29,20,20.4,28.6,23.4,20.2,23.8,22,0,0,C,
 30-May-1986,28,20.4,21,27.8,24,20.6,23.4,23,0,0,C,
 31-May-1986,22.4,16,16.8,20,22,16.4,17,21.6,68,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-1986,28,15.4,17.8,28,24,16.6,23,23,0,0,N,6
 02-Jun-1986,26,14,17.4,25,23,16.2,19,22,0,0,N,6
 03-Jun-1986,25,13.4,14,25,29,13.8,20.6,28,0,0,N,6
@@ -873,8 +819,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-1986,29.2,20,20.4,29,23.6,20.2,24,22.8,0,0,N,6
 29-Jun-1986,29.4,19,20,28.8,23.4,19.2,23.4,22.8,0,0,C,
 30-Jun-1986,29,20.2,20.8,24,22,20.4,23,21,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-1986,22,17.6,18,20,17.8,17.8,18,17,0,2,N,6
 02-Jul-1986,24.4,16.2,17,24,20,16.8,19.2,19,0,0,NE,6
 03-Jul-1986,25,17.2,18,24.8,20,17.6,21.2,19,0,0,N,6
@@ -906,8 +850,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-1986,28.4,18,18.4,28,24,18.2,23,22,2,0,N,6
 30-Jul-1986,29,18.2,19.4,28.4,23.6,19.2,24,22,0,0,N,6
 31-Jul-1986,30,18.2,19,29,23,18.4,24,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-1986,29,18.8,19.2,29,23,19,23,22,0,0,N,6
 02-Ago-1986,28.6,19,20.8,28.4,22,20,24.2,21,7,0,NE,9
 03-Ago-1986,28,20,21.4,24,22.4,21,28,21.2,5,0,N,6
@@ -939,8 +881,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-1986,29.4,17.4,18,28,21.4,17.8,22.4,20.2,0,0,N,6
 30-Ago-1986,29.4,19,20,29,22,19.4,23.4,21,1,4,NE,9
 31-Ago-1986,27,19.8,20.4,27.4,22.4,20.2,24,22,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-1986,29,20.8,21.4,27.8,23,21,23.4,22,0,0,E,12
 02-Sep-1986,27,20,20.8,27,21,20.4,24,20.4,0,0,N,6
 03-Sep-1986,30,17.4,18,30,21.8,17.8,23,21,0,0,N,6
@@ -971,8 +911,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-1986,26.8,16.8,18,26.1,21,17.4,25,20,.5,0,N,6
 29-Sep-1986,27,18,20.4,27,23,20,24,21.6,0,0,N,6
 30-Sep-1986,29,19.6,20.8,28,22.8,20.4,24,22,0,0,E,9
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-1986,28.4,19.6,20.4,28.4,25,20,23.8,22.4,0,0,NE,12
 02-Oct-1986,31,19,21,30.2,24,20.4,25.4,23,0,0,N,6
 03-Oct-1986,28,20,20.4,27.4,21.8,20.2,24,21.4,18,1,N,6
@@ -1004,8 +942,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-1986,31,20.2,21,30,23,20.4,25,22,0,20,N,6
 30-Oct-1986,28,18.4,21,24,22.6,20.8,23,21.8,0,0,N,6
 31-Oct-1986,-999,-999,-999,-999,-999,-999,-999,-999,-999,0,S/D,-999
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-1986,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,S/D,-999
 02-Nov-1986,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,S/D,-999
 03-Nov-1986,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,S/D,-999
@@ -1036,8 +972,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-1986,30,21.8,22.2,28,24,22,25,23,17,.5,E,18
 29-Nov-1986,30,22,23,29.8,25,22.4,25,24,80,0,N,9
 30-Nov-1986,27,21,21.8,26,22,21.4,24,21.8,11,6,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-1986,25,21.4,22,24.6,23,21.8,22.8,22.4,0,1,N,6
 02-Dic-1986,27,19,20.4,26.6,23,20,23.6,22,33,0,C,
 03-Dic-1986,23.4,19.2,19.6,22,21,19.4,21.4,20.6,40,3,C,
@@ -1069,8 +1003,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-1986,30,19,21.4,30,23,21,25,22,0,.5,NE,6
 30-Dic-1986,31,21.4,22,30.2,25,21.8,25.2,24,0,0,N,9
 31-Dic-1986,30,21,21.8,27,24,21.4,24.8,23.2,30,1,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-1987,31,21.2,22,30,24.4,21.6,25,23.2,0,0,N,6
 02-Ene-1987,30.6,21,21.8,30,24.4,21.4,25,23.4,30,2,C,
 03-Ene-1987,31,20.4,21,30.4,24.8,20.8,25,22.6,0,1,N,9
@@ -1102,8 +1034,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-1987,30.6,21.8,23,30,24,22,25.4,23,0,0,N,6
 30-Ene-1987,29.6,22.2,23,29.4,25,22.4,25,24,0,0,NE,9
 31-Ene-1987,30,21.8,23,30,25,22,25,24,.5,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-1987,29.2,21.6,22,27.8,23,21.8,24.4,22,0,25,N,6
 02-Feb-1987,28,21,21.4,26.2,22.6,21.2,23,22,15,0,N,6
 03-Feb-1987,31,20,22,30,25.2,21,26,23.4,0,0,E,6
@@ -1132,8 +1062,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-1987,30.2,19.2,19.8,30,25,19.6,25,23,0,0,N,6
 27-Feb-1987,29,20.2,20.8,28.6,23.4,20.4,24,22.4,30,0,N,6
 28-Feb-1987,29.4,21.4,22,29,24,21.8,24.2,23,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-1987,29,22,24,28.4,24,23,26,22.8,0,0,N,6
 02-Mar-1987,30.4,21.4,22,30,25,21.8,25,24,0,0,N,6
 03-Mar-1987,29,22,22.4,28,23,22.2,24.6,22.6,65,0,N,6
@@ -1165,8 +1093,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-1987,30,21.8,22.4,29.8,25,22,25.4,24,0,0,NE,9
 30-Mar-1987,31.6,22.4,23.8,30,24,23,26,23,0,3,N,6
 31-Mar-1987,27.6,21.4,22,27,23.6,21.8,24,22.8,5,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-1987,28,22.4,23,26,23.4,22.8,24,23,0,5,N,9
 02-Abr-1987,21,20.4,21,21,20,20.8,20.4,19,3,32,C,
 03-Abr-1987,25.6,18.8,19.8,25.4,22,19.6,22.4,21,5,0,N,6
@@ -1197,8 +1123,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-1987,24,20.4,21.2,23.4,22,21,21.8,21,62,.5,C,
 29-Abr-1987,27.6,20.2,20.6,27.4,24,20.4,23.4,23,0,0,N,12
 30-Abr-1987,28,21.4,22,28,24,21.8,25,23,7,4,E,12
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-1987,27,14.8,15.4,27,19.8,15,23,18.4,0,0,N,6
 02-Ago-1987,27.8,15.4,16,27.4,22.6,15.8,22.8,21.8,0,0,NE,9
 03-Ago-1987,23,20.2,20.8,22.8,22,20.4,21.4,21,0,0,NE,9
@@ -1230,8 +1154,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-1987,30.4,20.4,21,30,23.4,20.8,24.8,22,0,0,N,6
 30-Ago-1987,30,20.8,21.4,30,25,21.2,25,24,.5,0,N,6
 31-Ago-1987,24,16.4,18,21,19,16.8,18,18,22,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-1987,29,16.8,17.2,27.4,23,17,23,22,0,0,N,6
 02-Sep-1987,30.4,19.4,21,30.4,24,20.4,24.6,23,0,0,N,6
 03-Sep-1987,25.8,21,21.4,25.4,21.4,21.2,23.6,20.8,11,1,C,
@@ -1262,8 +1184,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-1987,28,20.8,21.4,26.2,24,21.2,24,23,0,8,NE,9
 29-Sep-1987,31,19.4,19.8,30,22,19.6,24,21,0,1,N,6
 30-Sep-1987,31.6,20.2,21.4,30.6,24.8,20.8,25.2,23.4,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-1987,30.4,19.6,20.8,29.6,24,20,25.2,23.2,0,0,NE,6
 02-Oct-1987,23,19,19.8,22.4,20,19.4,20,19.4,7,3,N,12
 03-Oct-1987,31,19.2,20,21,25,19.6,22,24,0,0,N,6
@@ -1295,8 +1215,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-1987,30,20.8,21.8,29,25,21.4,24.8,23.4,0,0,C,
 30-Oct-1987,31,21.8,23,30.4,24,22,26,23.8,0,4,N,6
 31-Oct-1987,31,21,22,31,25.4,21.2,26,24.2,5,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-1987,25,22,23.6,23,22.2,23.4,21.4,20.2,0,.5,E,15
 02-Nov-1987,30,19,20,29,26,19.4,24.2,23,0,0,NE,6
 03-Nov-1987,27,21,21.4,25,22,21.2,23,21.8,1,9,C,
@@ -1327,8 +1245,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-1987,28.8,21.8,22.4,26.8,22.4,22,25,22,1,12,N,6
 29-Nov-1987,30.2,21.8,22.4,29.8,24.4,22,24,23,10,0,N,6
 30-Nov-1987,31,21.2,22,31,24,21.4,25,23,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-1987,29.8,21.4,22,29,24,21.8,25,23,15,3,N,6
 02-Dic-1987,31,22,22.8,29.6,24,22.4,24.2,23,50,10,N,6
 03-Dic-1987,28,22,22.4,23.8,24,22.2,24.4,23,1,6,N,6
@@ -1360,8 +1276,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-1987,28.4,22.2,23.4,27,22.8,22.8,24,22,0,1,N,6
 30-Dic-1987,30,20.8,21.8,29.4,23,21.4,26.2,22.4,2,3,N,6
 31-Dic-1987,30,20.4,22,29,24,21.8,25,23,10,1,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-1988,30,22.4,23.2,28,22.2,22.8,25.4,20.8,0,0,N,6
 02-Ene-1988,29,22.8,23.4,28.4,24,23,24,23,0,1,N,6
 03-Ene-1988,31,22.2,24,30,25,23.4,25,24,0,0,N,6
@@ -1393,8 +1307,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-1988,29,22,22.4,28.4,24,22.2,25,23.4,25,2,N,9
 30-Ene-1988,29.8,21.4,22,28.4,23.6,21.8,25,22.8,0,0,NE,9
 31-Ene-1988,30,21.8,22.4,29.4,24.4,22,25.2,22.6,1,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-1988,28.4,20,21,24.2,21,20.4,22.8,20.6,0,8,NE,9
 02-Feb-1988,29,20,20.8,28.4,23.4,20.4,24,22.6,0,0,N,6
 03-Feb-1988,27,21.6,22.6,23,24,21.8,22,23.8,43,1,C,
@@ -1424,8 +1336,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 27-Feb-1988,32,19,20.6,31.4,24.6,20,26.8,23,.5,0,N,6
 28-Feb-1988,32,20.2,20.4,31,24,20.8,25.6,23,8,0,N,6
 29-Feb-1988,29.2,21.4,22.2,28.8,24.8,22,25,23.4,4,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-1988,31,21.6,22.4,30,24.6,22,24.6,23.8,0,0,N,6
 02-Mar-1988,26.4,21.8,22.4,26,22.6,22.2,24,22,64,0,C,
 03-Mar-1988,30.2,19.6,21,29,24.6,20.8,25,23.6,0,0,N,6
@@ -1457,8 +1367,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-1988,25,21.8,22.2,24,22.6,22,23,22,13,5,C,
 30-Mar-1988,27.4,20.4,21,27,23,21,24,22.4,0,0,N,6
 31-Mar-1988,27,21.4,22,27,24,21.8,25,23,1,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-1988,29,21,22,28,24,21.4,23.4,23,0,0,N,6
 02-May-1988,29.4,21,22,29.4,23,21.4,23.8,22,0,0,N,6
 03-May-1988,29.4,20.8,21.6,25,23.8,21.4,24.2,23,14,0,N,6
@@ -1490,8 +1398,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-1988,27,21.4,21.6,26,23.8,21.4,24,23,2,0,N,6
 30-May-1988,25.4,20.8,21.4,25.4,19.8,21,23.6,18.4,1,0,N,6
 31-May-1988,25.4,15.2,16.6,17,14.6,15.4,15.6,13.8,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-1988,17.4,13.8,14.2,16,15.2,14,14,14.4,0,0,N,6
 02-Jun-1988,22,14,15.2,20,18,14.6,18,17,0,0,N,6
 03-Jun-1988,25,15.8,16.4,23.8,19.8,16.2,20.4,18.4,0,0,N,6
@@ -1522,8 +1428,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-1988,27.8,20,21.8,27,23.4,21.4,23,22,8,.5,N,6
 29-Jun-1988,27.8,20.4,21.2,27,23,21,23.2,22,0,0,N,6
 30-Jun-1988,28.4,20.2,21,28,23.4,20.6,23.8,22.6,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-1988,31.6,16.4,18,31.6,24,17.8,24.2,22.8,0,0,C,
 02-Oct-1988,30.6,17.2,18.2,29.4,24.2,17.8,23.6,23.4,0,0,N,6
 03-Oct-1988,31.4,21,22,30.6,25.4,21.4,25,24,0,0,N,6
@@ -1555,8 +1459,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Oct-1988,31,17.2,17.6,29,24,17.4,24.2,22.4,0,0,N,6
 30-Oct-1988,31.4,21.4,22,30.2,24,21.8,25,23,9,0,N,6
 31-Oct-1988,33,21,22.4,31,25,22.2,26,24,40,.5,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Nov-1988,28,21.2,21.8,24,20,21.4,21.6,19,0,31,NE,6
 02-Nov-1988,25,18.8,19.4,24,21.8,19.2,23,21,3,0,N,6
 03-Nov-1988,26,18.6,20.8,29.6,24,19.4,23.4,23,0,0,N,6
@@ -1587,8 +1489,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Nov-1988,26,20.2,21.8,25.6,22.2,20.6,23,21.6,.5,0,N,6
 29-Nov-1988,30,21.4,22,26.4,23,21.8,24,22.6,0,4,N,6
 30-Nov-1988,25.4,20.4,22,24,22.6,21.6,23,22.2,0,.5,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Dic-1988,28.4,21,22.4,27,23,22,24,21.8,0,2,N,6
 02-Dic-1988,28,20.2,20.8,24.6,21.4,20.4,22,20.8,46,1,N,6
 03-Dic-1988,29.4,19.8,21,24,23.4,20.4,25,22,0,0,C,
@@ -1620,8 +1520,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Dic-1988,25,20.8,21.2,27.2,26.2,21,21.8,20,30,45,N,9
 30-Dic-1988,25,18.6,14.4,23.8,21.6,14,22.4,21.4,2,17,N,6
 31-Dic-1988,27,14.8,20.6,25,22.4,20.4,23,21.8,5,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ene-1989,22.4,21.4,22,24.6,22.8,21.8,23,22.2,0,32,C,
 02-Ene-1989,27.8,20.6,22,26,23.8,21.8,23,22.4,50,0,N,6
 03-Ene-1989,27.4,21,22.2,26.4,23,22,24,22.8,21,0,C,
@@ -1653,8 +1551,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ene-1989,29.8,21.4,22,21.8,24.2,21.8,24.2,23,0,4,NE,9
 30-Ene-1989,27,20.2,22,24,23,20.4,23,22,78,1,C,
 31-Ene-1989,29.4,19.2,20.8,29.4,23.6,20.4,25,22.8,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Feb-1989,30.4,21.4,22.8,24,22.8,22,23,22,0,3,N,6
 02-Feb-1989,30.4,20.8,21.8,29,24,21.4,23.6,22.8,0,0,NE,9
 03-Feb-1989,25,21,21.6,24.2,20.8,21.2,22.6,20.4,.1,0,N,6
@@ -1683,8 +1579,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 26-Feb-1989,30.4,19.8,20.8,26,21,20.4,23,20.6,0,0,N,6
 27-Feb-1989,30,18.6,22.4,24,21,21.2,23,20.4,0,10,N,6
 28-Feb-1989,29.4,19.8,21.2,28,22.8,20,24,20,2,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Mar-1989,30.6,20.4,22,30,25,21.8,25,23,0,17,N,6
 02-Mar-1989,30,21.4,22,29.4,23.6,21.8,25,22.8,0,1,N,6
 03-Mar-1989,24,21.2,21.8,24,22.4,21.4,23,21.8,28,.5,C,
@@ -1716,8 +1610,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Mar-1989,25,20,21,24.6,21.9,20.4,22.4,20.8,25,3,N,6
 30-Mar-1989,30,18.9,20.9,29,21.4,20.2,24,20.6,0,0,NE,6
 31-Mar-1989,31,17.4,18.6,29.6,22.2,18.2,23.8,21.6,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Abr-1989,30.8,19,20.4,27,23.6,20.2,24,22.4,0,16,N,6
 02-Abr-1989,30,19.4,20,28,20.6,19.6,24,20.2,55,2,N,6
 03-Abr-1989,30,18.4,19.2,29,22.6,19,23.2,21.4,0,0,N,6
@@ -1748,8 +1640,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Abr-1989,27.6,18.6,20,26.4,23,19,22.6,22.4,0,0,N,6
 29-Abr-1989,28.8,19.4,20.8,24,23.2,21,23,22.4,0,0,N,6
 30-Abr-1989,30.2,20,21,28,23.6,20.4,24,22.8,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-May-1989,29,19.8,20.8,24,23,20.4,23,22,0,0,N,6
 02-May-1989,30,19,21,30,24,20,25,23,14,0,N,6
 03-May-1989,30,20.8,21.4,25,21.6,21,23,21,5,0,E,6
@@ -1781,8 +1671,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-May-1989,27,19.8,20.4,25.6,22.4,20,22.8,21.8,0,0,C,
 30-May-1989,27.4,19.8,21,26.4,22.8,20,22.8,22,0,0,N,6
 31-May-1989,27.4,21.4,22,27,23,21.8,23.4,22,9,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jun-1989,26.2,19,20,25.8,22,19.8,23,21.4,0,11,N,6
 02-Jun-1989,27.4,18.4,24,27.4,21.4,19.8,24,20.8,1,0,C,
 03-Jun-1989,30,19,20.2,28,22.6,20,22.4,21.8,0,0,N,6
@@ -1813,8 +1701,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Jun-1989,29.6,19.4,20,26,22.4,19.8,23.4,21.8,0,0,NE,9
 29-Jun-1989,27,19.8,20.4,26,23.8,20.2,23.4,22.6,0,0,N,6
 30-Jun-1989,29,20,21.4,28.4,23.8,21,24,22.4,0,0,NE,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Jul-1989,30,19.8,20.4,28.4,23,20.2,23.8,22.4,0,0,N,6
 02-Jul-1989,29,19,20.2,24,21.6,20,23,20.4,45,0,N,6
 03-Jul-1989,19,14.6,15,16,15,14.8,14,13.8,12,0,C,
@@ -1846,8 +1732,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Jul-1989,30,20,21,28,23.6,20.4,23.6,22.4,0,0,C,
 30-Jul-1989,29,21.4,22,25,24.2,21.8,23,23,0,0,C,
 31-Jul-1989,30.4,17,19,30,24,18.6,25,23,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Ago-1989,28,17.8,20,28,22.4,19.4,22.6,21.8,27,0,N,6
 02-Ago-1989,24,20.4,21.4,22,21,20.8,21.4,20.6,0,0,C,
 03-Ago-1989,24.6,19,20.4,24,22.8,20.2,23,22,0,0,C,
@@ -1879,8 +1763,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 29-Ago-1989,30.6,21.4,22,30,25,21.8,25,24,0,0,C,
 30-Ago-1989,30.2,19.8,20.4,30,25,20.2,25,23.2,0,0,N,6
 31-Ago-1989,29.4,19.8,20.4,25,23,20.2,23,22.8,0,0,N,6
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Sep-1989,26,20.8,21.2,23,20.8,21,22.4,20,0,0,C,
 02-Sep-1989,29.8,19.6,21.4,21,23.4,21,24,22.2,2,0,N,6
 03-Sep-1989,26,18.1,22,24.8,22.4,21,23.2,22,0,5,N,6
@@ -1911,8 +1793,6 @@ Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (�
 28-Sep-1989,32,21,22,28.4,23.6,21.4,24,22.4,12,0,NE,9
 29-Sep-1989,32.4,20.3,22,31,22,21,30,21.4,3,0,N,6
 30-Sep-1989,30,18.8,20,28,20.2,19,24.2,19.6,20,0,C,
-Día/mes/año,TemperaturaMax (°c),TemperaturaMin (°c),Temperatura BulboSeco (°c),Temperatura BulboHumedo (°c),Precipitacion (mm),DirecciondelViento 13h,VelocidaddelViento 13h (m/s)
-07,13,19,07,13,19,07,19
 01-Oct-1989,31,20.4,21.2,30,25,21,23.6,23,10,0,N,6
 02-Oct-1989,29.8,21.4,23,28,21.2,22.2,24,20.6,4,0,C,
 03-Oct-1989,30,18.8,20.2,29,24,20,25,23,0,0,N,6
