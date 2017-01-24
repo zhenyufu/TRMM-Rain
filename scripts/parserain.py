@@ -3,9 +3,9 @@ import urllib2
 from bs4 import BeautifulSoup
 
 
-myLoc = "155518"
-myFile = "cusco8.csv"
-myTipo = "SUT" # red is CON, yellow is SUT
+myLoc = "000691"
+myFile = "madre4.csv"
+myTipo = "CON" # red is CON, yellow is SUT
 
 ##############
 myHandler = open(myFile,"a")
@@ -39,7 +39,9 @@ for m in myMonth:
     soup = BeautifulSoup(page.read())
     table = soup.find("table", attrs={"class":"body01"})
 
-    rows = table.find_all('tr')
+
+    # rows = table.find_all('tr')
+    rows = table.findAll("tr", {"bgcolor": None})
     for row in rows:
         cols = row.find_all('td')
         cols = [ele.text.strip() for ele in cols]
