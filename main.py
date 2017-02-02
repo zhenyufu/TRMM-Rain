@@ -24,10 +24,5 @@ print "reading TRMM data"
 dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
 
 
-def saveFile(thing,path):
-    out = open(path, 'wb')
-    pickle.dump(thing, out, pickle.HIGHEST_PROTOCOL)
-
-
 
 
