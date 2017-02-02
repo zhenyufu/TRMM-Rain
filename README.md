@@ -5,17 +5,14 @@ Thesis
 ## require 
 * python
 * BeautifulSoup for parsing
-* Read Netcdf4:
-
-
-
-
-* netcdf: https://github.com/Unidata/netcdf4-python
+* netcdf4: https://github.com/Unidata/netcdf4-python
+    * git clone 
     * pip install h5py
     * pip install netcdf4
 
 
-## GDAL
+
+### GDAL for netcdf - untested:
 ```
 apt-get install libgdal-dev
 export CPLUS_INCLUDE_PATH=/usr/include/gdal
