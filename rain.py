@@ -3,6 +3,7 @@ import csv
 import pickle
 import netCDF4
 import numpy as np
+import datetime
 
 def strToNum(tempList):
     print tempList.shape
@@ -50,7 +51,7 @@ def monthToNum(month):
     return x
 
 
-
+# have a list of date and a np array of the precipitation
 class StationData:
     def __init__(self, tempArray, fileName):
         self.fileName = fileName
@@ -62,7 +63,7 @@ class StationData:
         self.lon = 0
 
         self.rowNum = tempArray.shape[0]
-        self.colNum = 4 # should be 4: day, month, year, perp
+        self.colNum = 1 # 1 for the data
         self.isRain = False # be true for the stations with only one rain column
         # self.listPrep = np.array([], dtype=np.float64)
 
@@ -85,20 +86,22 @@ class StationData:
 
         ##### precipitation
         # self.dataList = [[l[i] for i in selectCol] for l in tempList]
-        self.listDate = np.zeros(shape=(self.rowNum, 3), dtype='int') # 3 for day month year
-        count = 0
+        self.listDate = [] # np.zeros(shape=(self.rowNum, 3), dtype='int') # 3 for day month year
         for s in np.nditer(tempArray[:,0]):
             s = s.tostring()
             temp = s.split("-")
-            # day
-            self.listDate[count,0] = int(temp[0])
-            # month
-            self.listDate[count,1] = monthToNum(temp[1])
 
+            # day
+            d = int(temp[0])
+            # month
+            m = monthToNum(temp[1])
             # year
-            self.listDate[count,2] = int(temp[2])
+            y = int(temp[2])
             #
-            count += 1
+
+            date = datetime.date(y,m,d)
+            self.listDate.append(date)
+
 
 
 
