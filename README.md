@@ -9,7 +9,7 @@ Thesis
     * git clone 
     * pip install h5py
     * pip install netcdf4
-
+* pip install tables
 
 
 ### GDAL for netcdf - untested:

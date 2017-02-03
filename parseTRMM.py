@@ -1,30 +1,20 @@
-import netCDF4
-import datetime
+from rain import *
 
 
 inPath = "../../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc"
 inFile = netCDF4.Dataset(inPath,'r')
 
-
-outPath = "../../TRMM_3B42_Daily_precipitation.7.SouthAmerica.edit.nc"
-outFile = netCDF4.Dataset(outPath,'w', format='NETCDF4')
-
-
+# 4D: lat, lon, date, precipitation
+#     f    f    date  f
+# python dict: dict[date] = a numpy 3d array of lat*lon*precipitation
 
 date = datetime.date(1998,1,1)
 
 
-outFile = inFile
-
 for i in range(0, 6878):
     print i
 
-
-    d = date.isoformat() #YYYY-MM-DD
-    print d
-    outFile.variables["time"][i] = d# cannot write due to its type being float
-    print outFile.variables['time'][i]
-
+    d
 
     date += datetime.timedelta(days=1)
 

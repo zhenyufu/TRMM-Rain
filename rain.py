@@ -4,6 +4,7 @@ import pickle
 import netCDF4
 import numpy as np
 import datetime
+import tables as tb
 
 def strToNum(tempList):
     print tempList.shape
