@@ -7,7 +7,7 @@ for data in dataSpanish:
     print data.endDate
 
 # dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
-out = open('_data/spanish', 'wb')
+out = open('_data/dataSpanish', 'wb')
 pickle.dump(dataSpanish, out, pickle.HIGHEST_PROTOCOL)
 
 

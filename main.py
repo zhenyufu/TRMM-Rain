@@ -20,8 +20,8 @@ for data in dataSpanish:
 
 
 
-print "reading TRMM data"
-dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
+#print "reading TRMM data"
+#dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
 
 
 
