@@ -87,7 +87,7 @@ class StationData:
 
         ##### precipitation
         # self.dataList = [[l[i] for i in selectCol] for l in tempList]
-        self.listDate = [] # np.zeros(shape=(self.rowNum, 3), dtype='int') # 3 for day month year
+        self.dateList = [] # np.zeros(shape=(self.rowNum, 3), dtype='int') # 3 for day month year
         for s in np.nditer(tempArray[:,0]):
             s = s.tostring()
             temp = s.split("-")
@@ -101,7 +101,7 @@ class StationData:
             #
 
             date = datetime.date(y,m,d)
-            self.listDate.append(date)
+            self.dateList.append(date)
 
 
 

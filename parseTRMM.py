@@ -10,6 +10,7 @@ inFile = netCDF4.Dataset(inPath,'r')
 
 date = datetime.date(1998,1,1)
 
+dateList = []
 
 for i in range(0, 6878):
     print i
