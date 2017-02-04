@@ -4,7 +4,8 @@ import pickle
 import netCDF4
 import numpy as np
 import datetime
-import tables as tb
+# import tables as tb
+from bisect import bisect_left
 
 def strToNum(tempList):
     print tempList.shape
@@ -136,4 +137,38 @@ def readTRMM(path):
 def pickleSave(thing,path):
     out = open(path, 'wb')
     pickle.dump(thing, out, pickle.HIGHEST_PROTOCOL)
+
+
+
+
+
+def takeClosest(myList, myNumber):
+    """
+    Assumes myList is sorted. Returns closest value to myNumber.
+
+    If two numbers are equally close, return the smallest number.
+    """
+    pos = bisect_left(myList, myNumber)
+    if pos == 0:
+        return myList[0]
+    if pos == len(myList):
+        return myList[-1]
+    before = myList[pos - 1]
+    after = myList[pos]
+    if after - myNumber < myNumber - before:
+       return after
+    else:
+       return before
+
+
+def getOverlap(A_start, A_end, B_start, B_end):
+    latest_start = max(A_start, B_start)
+    earliest_end = min(A_end, B_end)
+    return (earliest_end-latest_start).days, latest_start, earliest_end
+
+
+
+
+
+
 

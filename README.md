@@ -12,7 +12,12 @@ Thesis
 * pip install tables
 
 
-### GDAL for netcdf - untested:
+## _data/dataSpanish change log
+* original from running parseSpanish
+* 0.1 added lat and lon to all stations 
+
+
+### GDAL for netcdf - untested did not use:
 ```
 apt-get install libgdal-dev
 export CPLUS_INCLUDE_PATH=/usr/include/gdal
