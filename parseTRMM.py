@@ -2,7 +2,7 @@ from rain import *
 
 
 inPath = "../../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc"
-inFile = netCDF4.Dataset(inPath,'r')
+inTRMM = netCDF4.Dataset(inPath,'r')
 
 # 4D: lat, lon, date, precipitation
 #     f    f    date  f
@@ -10,16 +10,21 @@ inFile = netCDF4.Dataset(inPath,'r')
 
 date = datetime.date(1998,1,1)
 
-dateList = []
+dateList = [] # date (6878)
+dataTRMM = np.empty((240, 260,62400))
+# 3d array of lon, lat, prep
+#             240, 260, 6878
+
 
 for i in range(0, 6878):
     print i
-
-    d
+    print date
+    dateList.append(date)
 
     date += datetime.timedelta(days=1)
 
-
+    # access the lat lon precipitation for the current year
+    prep = inTRMM.variables['precipitation'][i][:][:]
 
 
 
