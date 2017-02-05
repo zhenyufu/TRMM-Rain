@@ -4,6 +4,7 @@ import pickle
 import netCDF4
 import numpy as np
 import datetime
+import matplotlib.pyplot as plt
 # import tables as tb
 from bisect import bisect_left
 
@@ -164,7 +165,7 @@ def takeClosest(myList, myNumber):
 def getOverlap(A_start, A_end, B_start, B_end):
     latest_start = max(A_start, B_start)
     earliest_end = min(A_end, B_end)
-    return (earliest_end-latest_start).days, latest_start, earliest_end
+    return (earliest_end-latest_start).days, latest_start, earliest_end,
 
 
 

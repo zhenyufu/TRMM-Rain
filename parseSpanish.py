@@ -19,10 +19,7 @@ pickle.dump(dataSpanish, out, pickle.HIGHEST_PROTOCOL)
 # dataTRMM.variables['lon'][:]
 # precipitation:   (u'time', u'lon', u'lat')
 # access precipitation:
-# dataTRMM.variables['precipitation'][time, lat, lon]
-# dataTRMM.variables['precipitation'][0., -49.875, -89.875]
-
-
+#  dataTRMM.variables['precipitation'][3:88,-76.375,14.125]
 #print len(dataSpanish[0])
 #print len(dataSpanish[0][0])
 
