@@ -50,7 +50,7 @@ for station in dataSpanish:
         # strange stuff
         if station.fileName == "raw_senamhi/madre5.csv":
             lapEnd = datetime.date(2016,10,6)
-
+            overLap = (lapEnd - lapStart).days
         print "days: ", overLap
         print lapStart, "to", lapEnd
 
@@ -88,8 +88,11 @@ for station in dataSpanish:
                 # get index
                 iSpanish = station.dateList.index(dayCounter)
                 iTRMM = TRMMDateList.index(dayCounter)
+                if station.fileName == "raw_senamhi/madre5.csv":
+                    print dayCounter, "and", overLap
             except:
                 # this date is not in one of the two lists
+                dayCounter += datetime.timedelta(days=1)
                 continue
 
             # get the prep only if the station is not -1
@@ -97,7 +100,7 @@ for station in dataSpanish:
             if p >= 0:
                 dDate.append(dayCounter)
                 dSpanish.append(p)
-                dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLat,nearLon])
+                dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
 
             # at the end
             dayCounter += datetime.timedelta(days=1)
@@ -114,8 +117,8 @@ for station in dataSpanish:
         # graph
         fig = plt.figure()
         plotType = 1
-        # 0 doulbe scatter
-        # 1 double line
+        # 0 doulbe scatter with time
+        # 1 double line with time
         # 2 correlation
         # 3 time shift correlation
         # 4 differnt x y
@@ -126,14 +129,19 @@ for station in dataSpanish:
             plt.scatter(dDate, dTRMM, c="red")
             plt.ylim(ymin=0)
         elif plotType == 1:
-             plt.plot(dDate, dSpanish, c= "blue")
-             plt.plot(dDate, dTRMM, c="red")
-             plt.ylim(ymin=0)
+            #del dTRMM[-90:]
+            #del dSpanish[:90]
+            #del dDate[:90]
+            plt.plot(dDate, dSpanish, c= "blue")
+            plt.plot(dDate, dTRMM, c="red")
+            plt.ylim(ymin=0)
 
         elif plotType == 2:
             plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 3:
-
+            del dTRMM[-90:]
+            del dSpanish[:90]
+            plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 4:
 
             plt.xlabel('1st X')
