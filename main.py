@@ -4,6 +4,19 @@ from rain import *
 
 print "MAIN: This is the main script"
 
+splitLength = 90
+# 1 is by day
+# 30
+# 365
+
+plotType = 2
+# 0 doulbe scatter with time
+# 1 double line with time
+# 2 correlation
+
+# 3 time shift correlation
+# 4 correlation with range
+# 5 differnt x  - not working yet
 
 
 
@@ -81,35 +94,49 @@ for station in dataSpanish:
 
 
         # interate through the overlap time and get the useable dates
-        dDate = []
+        dDate = [] # the start date if cumalating
         dSpanish = []
         dTRMM = []
         dayCounter = lapStart
         plt.ion()# turns on interactive mode to enable plotting more
-        for i in range(0, overLap+1):
+        dataDone = False
+        while( dayCounter <= lapEnd):
+            # for everyday in slpitLength
             # print dayCounter
-            try:
-                # get index
-                iSpanish = station.dateList.index(dayCounter)
-                iTRMM = TRMMDateList.index(dayCounter)
-                #if station.fileName == "raw_senamhi/madre5.csv":
-                #    print dayCounter, "and", overLap
-            except:
-                # this date is not in one of the two lists
+            cumuDay = dayCounter
+            cumuSpanish = 0
+            cumuTRMM = 0
+            for i in range(0, splitLength):
+                if (dayCounter > lapEnd):
+                    dataDone = True
+                    break;
+
+                # print dayCounter
+                try:
+                    # get index
+                    iSpanish = station.dateList.index(dayCounter)
+                    iTRMM = TRMMDateList.index(dayCounter)
+                    #if station.fileName == "raw_senamhi/madre5.csv":
+                    #    print dayCounter, "and", overLap
+                except:
+                    # this date is not in one of the two lists
+                    dayCounter += datetime.timedelta(days=1)
+                    continue
+
+                # get the prep only if the station is not -1
+                p = station.listPrep[iSpanish]
+                if p >= 0:
+                    cumuSpanish += p
+                    cumuTRMM += dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
                 dayCounter += datetime.timedelta(days=1)
-                continue
+            if (dataDone):
+                break;
+            # end for i in range(0, splitLength):
+            dDate.append(cumuDay)
+            dSpanish.append(cumuSpanish)
+            #dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
+            dTRMM.append(cumuTRMM)
 
-            # get the prep only if the station is not -1
-            p = station.listPrep[iSpanish]
-            if p >= 0:
-                dDate.append(dayCounter)
-                dSpanish.append(p)
-                #dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
-                dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,iLon,iLat])
-
-
-            # at the end
-            dayCounter += datetime.timedelta(days=1)
 
 
 
@@ -118,16 +145,7 @@ for station in dataSpanish:
         print len(dTRMM)
 
         # graph
-        fig = plt.figure()
-        plotType = 1
-        # 0 doulbe scatter with time
-        # 1 double line with time
-        # 2 correlation
-        # 3 time shift correlation
-        # 4 correlation with range
-        # 5 differnt x  - not working yet
-
-        ###
+        fig = plt.figure()        ###
         if plotType == 0:
             plt.scatter(dDate, dSpanish, c= "blue")
             plt.scatter(dDate, dTRMM, c="red")
