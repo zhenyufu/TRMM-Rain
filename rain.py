@@ -151,15 +151,15 @@ def takeClosest(myList, myNumber):
     """
     pos = bisect_left(myList, myNumber)
     if pos == 0:
-        return myList[0]
+        return myList[0], pos
     if pos == len(myList):
-        return myList[-1]
+        return myList[-1], pos
     before = myList[pos - 1]
     after = myList[pos]
     if after - myNumber < myNumber - before:
-       return after
+       return after, pos
     else:
-       return before
+       return before, pos-1
 
 
 def getOverlap(A_start, A_end, B_start, B_end):

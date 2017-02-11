@@ -19,7 +19,9 @@ for data in dataSpanish:
 
 
 print "reading TRMM data"
-dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
+#dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
+dataTRMM = readTRMM("../TRMM_3B42_Daily.1998-2016.7.SouthAmerica.nc")
+
 
 
 #TRMM date fixi
@@ -34,15 +36,17 @@ print TRMMDateList[0], "to", TRMMDateList[-1]
 
 ###############################################
 for station in dataSpanish:
+    print "######### processing:",station.fileName
     nearLat = 0
     nearLon = 0
     allLat = dataTRMM.variables['lat'][:]
     allLon = dataTRMM.variables['lon'][:]
 
 
-    nearLat = takeClosest(allLat, station.lat)
-    nearLon = takeClosest(allLon, station.lon)
-
+    nearLat, iLat = takeClosest(allLat, station.lat)
+    nearLon, iLon = takeClosest(allLon, station.lon)
+    print "using location(lat,lon)", nearLat, "," , nearLon
+    print "with index" , iLat, iLon
     # get time range
 
     overLap , lapStart, lapEnd = getOverlap(TRMMDateList[0], TRMMDateList[-1], station.dateList[0], station.dateList[-1])
@@ -88,8 +92,8 @@ for station in dataSpanish:
                 # get index
                 iSpanish = station.dateList.index(dayCounter)
                 iTRMM = TRMMDateList.index(dayCounter)
-                if station.fileName == "raw_senamhi/madre5.csv":
-                    print dayCounter, "and", overLap
+                #if station.fileName == "raw_senamhi/madre5.csv":
+                #    print dayCounter, "and", overLap
             except:
                 # this date is not in one of the two lists
                 dayCounter += datetime.timedelta(days=1)
@@ -100,19 +104,18 @@ for station in dataSpanish:
             if p >= 0:
                 dDate.append(dayCounter)
                 dSpanish.append(p)
-                dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
+                #dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
+                dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,iLon,iLat])
+
 
             # at the end
             dayCounter += datetime.timedelta(days=1)
 
 
 
-        # divide conresponding to each day !!
         print len(dDate)
         print len(dSpanish)
         print len(dTRMM)
-        #dPlot = [float(ai)/bi for ai,bi in zip(dSpanish,dTRMM)]
-        #print dPlot
 
         # graph
         fig = plt.figure()
@@ -121,7 +124,8 @@ for station in dataSpanish:
         # 1 double line with time
         # 2 correlation
         # 3 time shift correlation
-        # 4 differnt x y
+        # 4 correlation with range
+        # 5 differnt x  - not working yet
 
         ###
         if plotType == 0:
@@ -137,12 +141,20 @@ for station in dataSpanish:
             plt.ylim(ymin=0)
 
         elif plotType == 2:
+            plt.xlabel('dTRMM')
+            plt.ylabel('dSpanish')
             plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 3:
             del dTRMM[-90:]
-            del dSpanish[:90]
+            del dSpanish[:90] # remove the last 90
             plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 4:
+            plt.scatter(dTRMM, dSpanish, c= "blue")
+            lims = [0,20]
+            plt.xlim(lims)
+            plt.ylim(lims)
+
+        elif plotType == 5:
 
             plt.xlabel('1st X')
             plt.ylabel('1st Y')
@@ -165,7 +177,8 @@ for station in dataSpanish:
 
 
 
-        ###
+        ##
+        fig.suptitle(station.fileName, fontsize=20)#
         plt.show()
         #plt.show(block=False)
 
