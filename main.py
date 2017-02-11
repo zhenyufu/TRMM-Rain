@@ -146,6 +146,11 @@ for station in dataSpanish:
 
         # graph
         fig = plt.figure()        ###
+        try:
+            pMax = max(max(dSpanish), max(dTRMM))
+            plt.plot([0,pMax], [0,pMax], c="red")
+        except:
+            print "hi"
         if plotType == 0:
             plt.scatter(dDate, dSpanish, c= "blue")
             plt.scatter(dDate, dTRMM, c="red")
