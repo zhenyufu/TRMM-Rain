@@ -4,7 +4,7 @@ from rain import *
 
 print "MAIN: This is the main script"
 
-splitLength = 90
+splitLength = 30
 # 1 is by day
 # 30
 # 365
@@ -17,9 +17,11 @@ plotType = 2
 # 3 time shift correlation
 # 4 correlation with range
 # 5 differnt x  - not working yet
+kml = simplekml.Kml()
+kmlName = "/media/sf_myshareDebianMain/" + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 
 
-
+###########################################################
 print "reading spanish data"
 f = open('_data/dataSpanish_0.1', 'rb')
 dataSpanish = pickle.load(f)
@@ -143,6 +145,22 @@ for station in dataSpanish:
         print len(dDate)
         print len(dSpanish)
         print len(dTRMM)
+        pnt = kml.newpoint(name=station.fileName)
+        #pnt.coords = [(nearLon, nearLat)]
+        pnt.coords = [(station.lon, station.lat)]
+        comp = compareList(dSpanish, dTRMM)
+        # TRMM overestimates
+        if comp > 0:
+            pnt.style.labelstyle.color = simplekml.Color.red
+        # TRMM underestimates
+        elif comp < 0 :
+            pnt.style.labelstyle.color = simplekml.Color.blue
+        # right in a way
+        else:
+            pnt.style.labelstyle.color = simplekml.Color.yellow
+
+        pnt.style.balloonstyle.text = "difference is:" + str(comp) + "/" + str(len(dSpanish))
+
 
         # graph
         fig = plt.figure()        ###
@@ -215,7 +233,7 @@ for station in dataSpanish:
 
 
 
-
+kml.save(kmlName)
 
 
 

@@ -7,6 +7,7 @@ import datetime
 import matplotlib.pyplot as plt
 # import tables as tb
 from bisect import bisect_left
+import simplekml
 
 def strToNum(tempList):
     print tempList.shape
@@ -170,6 +171,17 @@ def getOverlap(A_start, A_end, B_start, B_end):
 
 
 
+
+
+def compareList(dSpanish, dTRMM):
+    listLength = len(dSpanish)
+    biggerTRMM = 0
+    for i in range(0,listLength):
+        if dSpanish[i] <  dTRMM[i]:
+            biggerTRMM += 1
+        else:
+            biggerTRMM -= 1
+    return biggerTRMM
 
 
 
