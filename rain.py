@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 # import tables as tb
 from bisect import bisect_left
 import simplekml
+from pylab import *
+from scipy.optimize import curve_fit
+
 
 def strToNum(tempList):
     print tempList.shape
@@ -184,4 +187,35 @@ def compareList(dSpanish, dTRMM):
     return biggerTRMM
 
 
+def curveExpo(x, a, b, c):
+    return a*np.exp(-b*x)+c
+
+def curvePower(x,a,b):
+    #return a*np.power(x, -b)
+    return a*x**(-b)
+
+def plotAOverB(a,b,drawCurve):
+    # dTRMM/dSpanish
+    plt.xlabel('dSpanish')
+    plt.ylabel('dTRMM/dSpanish')
+    try:
+        pMax = max(b);
+        plt.plot([0,pMax], [1,1], c="red")
+    except:
+        print "hll"
+
+    # remove 0 in list
+    for f in range(0, len(b)):
+        if b[f] == 0:
+            b[f] = 0.00001
+
+    fdiv = [float(ai)/bi for ai,bi in zip(a,b)]
+    plt.scatter(b, fdiv ,c= "blue")
+
+    if drawCurve:
+        popt, pcov = curve_fit(curvePower, b, fdiv,p0=(1, -0.1, 0.1))
+        print popt
+        xx = np.linspace(100, 8000, 1000)
+        yy = curveExpo(xx, *popt)
+        plt.plot(xx,yy)
 

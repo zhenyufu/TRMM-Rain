@@ -4,17 +4,17 @@ from rain import *
 
 print "MAIN: This is the main script"
 
-splitLength = 30
+splitLength = 365
 # 1 is by day
 # 30
 # 365
 
-plotType = 2
+plotType = 3
 # 0 doulbe scatter with time
 # 1 double line with time
 # 2 correlation
+# 3 ratio over weather station
 
-# 3 time shift correlation
 # 4 correlation with range
 # 5 differnt x  - not working yet
 kml = simplekml.Kml()
@@ -49,6 +49,8 @@ for i in range(0, 6878):
 
 print TRMMDateList[0], "to", TRMMDateList[-1]
 
+totalSpanish = []
+totalTRMM = []
 ###############################################
 for station in dataSpanish:
     print "######### processing:",station.fileName
@@ -141,6 +143,8 @@ for station in dataSpanish:
 
 
 
+        totalSpanish.extend(dSpanish)
+        totalTRMM.extend(dTRMM)
 
         print len(dDate)
         print len(dSpanish)
@@ -164,31 +168,28 @@ for station in dataSpanish:
 
         # graph
         fig = plt.figure()        ###
-        try:
-            pMax = max(max(dSpanish), max(dTRMM))
-            plt.plot([0,pMax], [0,pMax], c="red")
-        except:
-            print "hi"
         if plotType == 0:
             plt.scatter(dDate, dSpanish, c= "blue")
             plt.scatter(dDate, dTRMM, c="red")
             plt.ylim(ymin=0)
         elif plotType == 1:
-            #del dTRMM[-90:]
-            #del dSpanish[:90]
-            #del dDate[:90]
             plt.plot(dDate, dSpanish, c= "blue")
             plt.plot(dDate, dTRMM, c="red")
             plt.ylim(ymin=0)
 
         elif plotType == 2:
+            try:
+                pMax = max(max(dSpanish), max(dTRMM))
+                plt.plot([0,pMax], [0,pMax], c="red")
+            except:
+                print "hi"
+
             plt.xlabel('dTRMM')
             plt.ylabel('dSpanish')
             plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 3:
-            del dTRMM[-90:]
-            del dSpanish[:90] # remove the last 90
-            plt.scatter(dTRMM, dSpanish, c= "blue")
+            plotAOverB(dTRMM, dSpanish, False)
+
         elif plotType == 4:
             plt.scatter(dTRMM, dSpanish, c= "blue")
             lims = [0,20]
@@ -228,16 +229,37 @@ for station in dataSpanish:
         print "No OverLap in" , station.fileName
 
 
+# plots for total
+
+if plotType == 3:
+    fig = plt.figure()
+
+    #plotAOverB(totalTRMM, totalSpanish, True)
+    #popt, pcov = curve_fit(curveExpo, totalTRMM, totalSpanish)
 
 
+
+    for f in range(0, len(totalSpanish)):
+         if totalSpanish[f] == 0:
+             totalSpanish[f] = 0.00001
+
+    fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+    plt.scatter(totalSpanish, fdiv ,c= "blue")
+
+    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(508, 0.87))
+    print popt
+    xx = np.linspace(1, 8001, 1000)
+    yy = curvePower(xx, *popt)
+    plt.plot(xx,yy)
+    #plot(totalSpanish, curvePower(totalSpanish, *popt), 'r-', label='Fit')
+
+####################################################
+    fig.suptitle("ratio", fontsize=20)
+    plt.show()
 
 
 
 kml.save(kmlName)
-
-
-
-
 
 
 
