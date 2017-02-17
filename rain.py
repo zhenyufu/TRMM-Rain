@@ -192,7 +192,7 @@ def curveExpo(x, a, b, c):
 
 def curvePower(x,a,b):
     #return a*np.power(x, -b)
-    return a*x**(-b)
+    return a*x**(b)
 
 def plotAOverB(a,b,drawCurve):
     # dTRMM/dSpanish
@@ -209,7 +209,7 @@ def plotAOverB(a,b,drawCurve):
         if b[f] == 0:
             b[f] = 0.00001
 
-    fdiv = [float(ai)/bi for ai,bi in zip(a,b)]
+    fdiv = [ float(ai)/bi for ai,bi in zip(a,b)]
     plt.scatter(b, fdiv ,c= "blue")
 
     if drawCurve:

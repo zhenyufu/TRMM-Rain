@@ -3,7 +3,7 @@ from rain import *
 
 
 print "MAIN: This is the main script"
-
+hostPath = "/media/sf_myshareDebianMain/"
 splitLength = 365
 # 1 is by day
 # 30
@@ -18,7 +18,7 @@ plotType = 3
 # 4 correlation with range
 # 5 differnt x  - not working yet
 kml = simplekml.Kml()
-kmlName = "/media/sf_myshareDebianMain/" + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
+kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 
 
 ###########################################################
@@ -229,32 +229,70 @@ for station in dataSpanish:
         print "No OverLap in" , station.fileName
 
 
-# plots for total
+# plots for total check in excel
+if plotType == 333:
 
+    cPath = hostPath + "divid_correlation_Spanish_TRMM_" + str(splitLength) + ".csv"
+    for f in range(0, len(totalSpanish)):
+          if totalSpanish[f] == 0:
+              totalSpanish[f] = 0.00001
+
+    fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+    stuff = zip(totalSpanish,fdiv)
+
+    with open(cPath, 'wb') as f:
+        writer = csv.writer(f, delimiter=',')
+        writer.writerows(stuff)
+
+
+# power curve not working
 if plotType == 3:
     fig = plt.figure()
 
     #plotAOverB(totalTRMM, totalSpanish, True)
     #popt, pcov = curve_fit(curveExpo, totalTRMM, totalSpanish)
 
-
-
+    smallNum = 0.1
+    delList = set() # fucking set !!
     for f in range(0, len(totalSpanish)):
-         if totalSpanish[f] == 0:
-             totalSpanish[f] = 0.00001
+         if totalSpanish[f] < smallNum:
+            #totalSpanish[f] = smallNum
+            delList.add(f)
+
+    for f in range(0, len(totalTRMM)):
+        if totalTRMM[f] < smallNum:
+            #totalTRMM[f] = smallNum
+            # check duplicats
+            delList.add(f)
+
+
+    print "BAD:", delList
+
+    for i in sorted(delList, reverse=True):
+        print "deleting:" , i
+        del totalSpanish[i]
+        del totalTRMM[i]
 
     fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+
+
+    totalSpanish = [float(f/1000) for f in totalSpanish]
+
     plt.scatter(totalSpanish, fdiv ,c= "blue")
 
-    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(508, 0.87))
+    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(1, -0.87))
     print popt
-    xx = np.linspace(1, 8001, 1000)
+    xx = np.linspace(0.1, max(totalSpanish), 100)
     yy = curvePower(xx, *popt)
-    plt.plot(xx,yy)
+    plt.plot(xx,yy, c='r')
     #plot(totalSpanish, curvePower(totalSpanish, *popt), 'r-', label='Fit')
 
 ####################################################
-    fig.suptitle("ratio", fontsize=20)
+    title = "ratio:" + "y=" + str(popt[0]) + " x^(" + str(popt[1]) + ")"
+    fig.suptitle( title, fontsize=20)
+    plt.xlabel('totalSpanish(m)')
+    plt.ylabel("totalTRMM/totalSpanish")
+
     plt.show()
 
 
