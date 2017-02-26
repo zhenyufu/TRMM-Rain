@@ -9,7 +9,7 @@ splitLength = 365
 # 30
 # 365
 
-plotType = 3
+plotType = 2
 # 0 doulbe scatter with time
 # 1 double line with time
 # 2 correlation
@@ -152,7 +152,8 @@ for station in dataSpanish:
         pnt = kml.newpoint(name=station.fileName)
         #pnt.coords = [(nearLon, nearLat)]
         pnt.coords = [(station.lon, station.lat)]
-        comp = compareList(dSpanish, dTRMM)
+        #comp = compareList(dSpanish, dTRMM)
+        comp = compareListDistance(dSpanish, dTRMM)
         # TRMM overestimates
         if comp > 0:
             pnt.style.labelstyle.color = simplekml.Color.red
@@ -163,8 +164,8 @@ for station in dataSpanish:
         else:
             pnt.style.labelstyle.color = simplekml.Color.yellow
 
-        pnt.style.balloonstyle.text = "difference is:" + str(comp) + "/" + str(len(dSpanish))
-
+        #pnt.style.balloonstyle.text = "difference is:" + str(comp) + "/" + str(len(dSpanish))
+        pnt.style.balloonstyle.text = "(negative,blue is underestimate) difference is:" + str(comp)
 
         # graph
         fig = plt.figure()        ###

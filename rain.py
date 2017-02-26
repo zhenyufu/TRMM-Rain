@@ -10,7 +10,7 @@ from bisect import bisect_left
 import simplekml
 from pylab import *
 from scipy.optimize import curve_fit
-
+import math as Math
 
 def strToNum(tempList):
     print tempList.shape
@@ -175,6 +175,28 @@ def getOverlap(A_start, A_end, B_start, B_end):
 
 
 
+def compareListDistance(dSpanish, dTRMM):
+    try:
+        pMax = max(max(dSpanish), max(dTRMM))
+        plt.plot([0,pMax], [0,pMax], c="red")
+    except:
+        print "hi"
+
+    listLength = len(dSpanish)
+    total = 0
+    for i in range(0,listLength):
+        x = dTRMM[i]
+        y = dSpanish[i]
+        d = pointLineDistance(x, y, 0, 0, pMax, pMax)
+        # print "d" , d
+        # negative - underestimate - if above the line
+        if x < y:
+            d = -d
+        total+=d
+    return total
+
+
+
 
 def compareList(dSpanish, dTRMM):
     listLength = len(dSpanish)
@@ -188,7 +210,7 @@ def compareList(dSpanish, dTRMM):
 
 
 def curveExpo(x, a, b, c):
-    return a*np.exp(-b*x)+c
+    return a*np.exp(b*x)+c
 
 def curvePower(x,a,b):
     #return a*np.power(x, -b)
@@ -218,4 +240,38 @@ def plotAOverB(a,b,drawCurve):
         xx = np.linspace(100, 8000, 1000)
         yy = curveExpo(xx, *popt)
         plt.plot(xx,yy)
+
+def pointLineDistance(x, y, x1, y1, x2, y2):
+    A = x - x1
+    B = y - y1
+    C = x2 - x1
+    D = y2 - y1
+
+    dot = A * C + B * D
+    len_sq = C * C + D * D
+    param = -1
+    if (len_sq != 0):
+        param = dot
+
+    xx = 0
+    yy = 0
+
+    if (param < 0):
+        xx = x1
+        yy = y1
+
+    elif (param > 1):
+        xx = x2
+        yy = y2
+
+    else:
+        xx = x1 + param * C
+        yy = y1 + param * D
+
+
+    dx = x - xx
+    dy = y - yy
+    sq = Math.sqrt(dx * dx + dy * dy)
+    return sq
+
 
