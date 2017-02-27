@@ -4,12 +4,17 @@ from rain import *
 
 print "MAIN: This is the main script"
 hostPath = "/media/sf_myshareDebianMain/"
-splitLength = 365
+splitLength = 90
 # 1 is by day
 # 30
 # 365
+isMeaned = True
+bySeason = False # use only with isMeaned set to True
+# Wet: 11-4
+# dry: 5-10
 
-plotType = 2
+
+plotType = 3
 # 0 doulbe scatter with time
 # 1 double line with time
 # 2 correlation
@@ -51,7 +56,10 @@ print TRMMDateList[0], "to", TRMMDateList[-1]
 
 totalSpanish = []
 totalTRMM = []
-###############################################
+totalSpanish2 = []
+totalTRMM2 = []
+
+##############################################
 for station in dataSpanish:
     print "######### processing:",station.fileName
     nearLat = 0
@@ -101,20 +109,70 @@ for station in dataSpanish:
         dDate = [] # the start date if cumalating
         dSpanish = []
         dTRMM = []
+        #if bySeason:
+        dDate2 = [] # the start date if cumalating
+        dSpanish2 = []
+        dTRMM2 = []
+
         dayCounter = lapStart
         plt.ion()# turns on interactive mode to enable plotting more
         dataDone = False
+        meanCount = 0
+
+        if bySeason:
+            # must start by 5 or 11
+            while not(dayCounter.month == 5 or dayCounter.month == 11):
+                dayCounter += datetime.timedelta(days=1)
+
+
         while( dayCounter <= lapEnd):
             # for everyday in slpitLength
             # print dayCounter
             cumuDay = dayCounter
+            # 1 is dry, 2 is wet
             cumuSpanish = 0
             cumuTRMM = 0
+            cumuSpanish2 = 0
+            cumuTRMM2 = 0
+            seasonIsDry = isDrySeason(dayCounter.month) # -1 # true for dry, false for wet
+
+            if bySeason:
+                while isDrySeason(dayCounter.month) ==  seasonIsDry:
+
+
+                    try:
+                        iSpanish = station.dateList.index(dayCounter)
+                        iTRMM = TRMMDateList.index(dayCounter)
+                    except:
+                        dayCounter += datetime.timedelta(days=1)
+                        continue
+                    p = station.listPrep[iSpanish]
+                    if p >= 0:
+                        addSpanish = p
+                        addTRMM = dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
+
+                    if isDrySeason(dayCounter.month):
+                        cumuSpanish += addSpanish
+                        cumuTRMM += addTRMM
+                    else:
+                        cumuSpanish2 += addSpanish
+                        cumuTRMM2 += addTRMM
+
+                    dayCounter += datetime.timedelta(days=1)
+                dSpanish.append(cumuSpanish)
+                dTRMM.append(cumuTRMM)
+                dSpanish2.append(cumuSpanish2)
+                dTRMM2.append(cumuTRMM2)
+
+                seasonIsDry = isDrySeason(dayCounter.month)
+                continue
+
+            # else ##################
             for i in range(0, splitLength):
                 if (dayCounter > lapEnd):
                     dataDone = True
                     break;
-
+                meanCount +=1
                 # print dayCounter
                 try:
                     # get index
@@ -141,19 +199,34 @@ for station in dataSpanish:
             #dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
             dTRMM.append(cumuTRMM)
 
+        # end of while( dayCounter <= lapEnd):
+
+        print "Mean by", meanCount
+        if isMeaned:
+            dSpanish = np.mean(dSpanish)
+            dTRMM = np.mean(dTRMM)
+            totalSpanish.append(dSpanish)
+            totalTRMM.append(dTRMM)
+
+            if bySeason:
+                dSpanish2 = np.mean(dSpanish2)
+                dTRMM2 = np.mean(dTRMM2)
+                totalSpanish2.append(dSpanish2)
+                totalTRMM2.append(dTRMM2)
+                print totalTRMM2
+        else:
+            totalSpanish.extend(dSpanish)
+            totalTRMM.extend(dTRMM)
 
 
-        totalSpanish.extend(dSpanish)
-        totalTRMM.extend(dTRMM)
-
-        print len(dDate)
-        print len(dSpanish)
-        print len(dTRMM)
+        #print len(dDate)
+        ##print len(dSpanish)
+        #print len(dTRMM)
         pnt = kml.newpoint(name=station.fileName)
         #pnt.coords = [(nearLon, nearLat)]
         pnt.coords = [(station.lon, station.lat)]
         #comp = compareList(dSpanish, dTRMM)
-        comp = compareListDistance(dSpanish, dTRMM)
+        comp = compareListDistance(dSpanish, dTRMM, isMeaned)
         # TRMM overestimates
         if comp > 0:
             pnt.style.labelstyle.color = simplekml.Color.red
@@ -189,7 +262,8 @@ for station in dataSpanish:
             plt.ylabel('dSpanish')
             plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 3:
-            plotAOverB(dTRMM, dSpanish, False)
+            if not isMeaned:
+                plotAOverB(dTRMM, dSpanish, False)
 
         elif plotType == 4:
             plt.scatter(dTRMM, dSpanish, c= "blue")
@@ -250,52 +324,24 @@ if plotType == 333:
 if plotType == 3:
     fig = plt.figure()
 
-    #plotAOverB(totalTRMM, totalSpanish, True)
-    #popt, pcov = curve_fit(curveExpo, totalTRMM, totalSpanish)
+    popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "dry")
+    if bySeason:
+        popt2,r_squared2 = plotAOverB(totalTRMM2, totalSpanish2, True, "red", "wet")
+ ####################################################
+    pre = ""
+    if isMeaned:
+        pre = "isMeaned - "
+    if bySeason:
+        pre+= "bySeason - Dry: "
+    title = pre + "y=" + str(popt[0]) + " x^(" + str(popt[1]) + ")" + "\n      Rsqrt: " + str(r_squared)
+    if bySeason:
+        title +=  "\n Wet: y=" + str(popt2[0]) + " x^(" + str(popt2[1]) + ")" +          "\n      Rsqrt: " + str(r_squared2)
 
-    smallNum = 0.1
-    delList = set() # fucking set !!
-    for f in range(0, len(totalSpanish)):
-         if totalSpanish[f] < smallNum:
-            #totalSpanish[f] = smallNum
-            delList.add(f)
-
-    for f in range(0, len(totalTRMM)):
-        if totalTRMM[f] < smallNum:
-            #totalTRMM[f] = smallNum
-            # check duplicats
-            delList.add(f)
-
-
-    print "BAD:", delList
-
-    for i in sorted(delList, reverse=True):
-        print "deleting:" , i
-        del totalSpanish[i]
-        del totalTRMM[i]
-
-    fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
-
-
-    totalSpanish = [float(f/1000) for f in totalSpanish]
-
-    plt.scatter(totalSpanish, fdiv ,c= "blue")
-
-    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(1, -0.87))
-    print popt
-    xx = np.linspace(0.1, max(totalSpanish), 100)
-    yy = curvePower(xx, *popt)
-    plt.plot(xx,yy, c='r')
-    #plot(totalSpanish, curvePower(totalSpanish, *popt), 'r-', label='Fit')
-
-####################################################
-    title = "ratio:" + "y=" + str(popt[0]) + " x^(" + str(popt[1]) + ")"
     fig.suptitle( title, fontsize=20)
     plt.xlabel('totalSpanish(m)')
     plt.ylabel("totalTRMM/totalSpanish")
-
+    plt.legend(loc='upper right')
     plt.show()
-
 
 
 kml.save(kmlName)

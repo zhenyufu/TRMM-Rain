@@ -175,24 +175,36 @@ def getOverlap(A_start, A_end, B_start, B_end):
 
 
 
-def compareListDistance(dSpanish, dTRMM):
+def compareListDistance(dSpanish, dTRMM, isMeaned):
     try:
         pMax = max(max(dSpanish), max(dTRMM))
         plt.plot([0,pMax], [0,pMax], c="red")
     except:
         print "hi"
-
-    listLength = len(dSpanish)
+    listLength = 0
     total = 0
-    for i in range(0,listLength):
-        x = dTRMM[i]
-        y = dSpanish[i]
-        d = pointLineDistance(x, y, 0, 0, pMax, pMax)
-        # print "d" , d
-        # negative - underestimate - if above the line
+    if isMeaned:
+        listLength = 1
+        x = dTRMM
+        y = dSpanish
+        d = pointLineDistance(x, y, 0, 0, x, y)
+             # print "d" , d
+             # negative - underestimate - if above the line
         if x < y:
             d = -d
-        total+=d
+            total=d
+
+    else:
+        listLength = len(dSpanish)
+        for i in range(0,listLength):
+            x = dTRMM[i]
+            y = dSpanish[i]
+            d = pointLineDistance(x, y, 0, 0, pMax, pMax)
+            # print "d" , d
+            # negative - underestimate - if above the line
+            if x < y:
+                d = -d
+            total+=d
     return total
 
 
@@ -216,30 +228,44 @@ def curvePower(x,a,b):
     #return a*np.power(x, -b)
     return a*x**(b)
 
-def plotAOverB(a,b,drawCurve):
-    # dTRMM/dSpanish
-    plt.xlabel('dSpanish')
-    plt.ylabel('dTRMM/dSpanish')
-    try:
-        pMax = max(b);
-        plt.plot([0,pMax], [1,1], c="red")
-    except:
-        print "hll"
+def plotAOverB(totalTRMM, totalSpanish ,drawCurve, col, lab):
+    smallNum = 0.1
+    delList = set() # fucking set !!
+    for f in range(0, len(totalSpanish)):
+        if totalSpanish[f] < smallNum:
+            delList.add(f)
 
-    # remove 0 in list
-    for f in range(0, len(b)):
-        if b[f] == 0:
-            b[f] = 0.00001
+    for f in range(0, len(totalTRMM)):
+        if totalTRMM[f] < smallNum:
+            delList.add(f)
 
-    fdiv = [ float(ai)/bi for ai,bi in zip(a,b)]
-    plt.scatter(b, fdiv ,c= "blue")
+    for i in sorted(delList, reverse=True):
+        print "deleting:" , i
+        del totalSpanish[i]
+        del totalTRMM[i]
 
-    if drawCurve:
-        popt, pcov = curve_fit(curvePower, b, fdiv,p0=(1, -0.1, 0.1))
-        print popt
-        xx = np.linspace(100, 8000, 1000)
-        yy = curveExpo(xx, *popt)
-        plt.plot(xx,yy)
+    fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+
+
+    totalSpanish = [float(f/1000) for f in totalSpanish]
+
+    plt.scatter(totalSpanish, fdiv ,c= col, label=lab)
+
+    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(1, -0.87))
+    print popt
+    xx = np.linspace(0.1, max(totalSpanish), 100)
+    yy = curvePower(xx, *popt)
+    plt.plot(xx,yy, c=col)
+    #plot(totalSpanish, curvePower(totalSpanish, *popt), 'r-', label='Fit')
+    # calculate R squared
+    residuals = fdiv- curvePower(totalSpanish, popt[0], popt[1])
+    ss_res = np.sum(residuals**2)
+    ss_tot = np.sum((fdiv-np.mean(fdiv))**2)
+    r_squared = 1 - (ss_res / ss_tot)
+    return popt, r_squared
+
+
+
 
 def pointLineDistance(x, y, x1, y1, x2, y2):
     A = x - x1
@@ -274,4 +300,12 @@ def pointLineDistance(x, y, x1, y1, x2, y2):
     sq = Math.sqrt(dx * dx + dy * dy)
     return sq
 
+def isDrySeason(month):
+    if month >= 5 and  month <= 10:
+        return True
+    else:
+        return False
 
+
+def getRainOnDay(d):
+    print "l"
