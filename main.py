@@ -8,8 +8,8 @@ splitLength = 365
 # 1 is by day
 # 30
 # 365
-isMeaned = False
-bySeason = True # use only with isMeaned set to True
+isMeaned = True
+bySeason = False # use only with isMeaned set to True
 # Wet: 11-4
 # dry: 5-10
 
@@ -121,7 +121,7 @@ for station in dataSpanish:
 
         if bySeason:
             # must start by 5 or 11
-            while not(dayCounter.month == 5 or dayCounter.month == 11):
+            while not(dayCounter.month == 5 or dayCounter.month == 12):
                 dayCounter += datetime.timedelta(days=1)
 
 
@@ -134,10 +134,13 @@ for station in dataSpanish:
             cumuTRMM = 0
             cumuSpanish2 = 0
             cumuTRMM2 = 0
-            seasonIsDry = isDrySeason(dayCounter.month) # -1 # true for dry, false for wet
-
+            seasonId = isDrySeason(dayCounter.month) # -1 # true for dry, false for wet
             if bySeason:
-                while isDrySeason(dayCounter.month) ==  seasonIsDry:
+                if seasonId == -1:
+                    dayCounter += datetime.timedelta(days=1)
+                    continue
+
+                while isDrySeason(dayCounter.month) ==  seasonId:
 
 
                     try:
@@ -151,12 +154,14 @@ for station in dataSpanish:
                         addSpanish = p
                         addTRMM = dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
 
-                    if isDrySeason(dayCounter.month):
+                    if isDrySeason(dayCounter.month) == 1:
                         cumuSpanish += addSpanish
                         cumuTRMM += addTRMM
-                    else:
+                    elif isDrySeason(dayCounter.month) == 2:
                         cumuSpanish2 += addSpanish
                         cumuTRMM2 += addTRMM
+                    else:
+                        continue
 
                     dayCounter += datetime.timedelta(days=1)
                 dSpanish.append(cumuSpanish)
@@ -164,7 +169,7 @@ for station in dataSpanish:
                 dSpanish2.append(cumuSpanish2)
                 dTRMM2.append(cumuTRMM2)
 
-                seasonIsDry = isDrySeason(dayCounter.month)
+                seasonId = isDrySeason(dayCounter.month)
                 continue
 
             # else ##################
@@ -172,7 +177,6 @@ for station in dataSpanish:
                 if (dayCounter > lapEnd):
                     dataDone = True
                     break;
-                meanCount +=1
                 # print dayCounter
                 try:
                     # get index
@@ -199,6 +203,7 @@ for station in dataSpanish:
             #dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
             dTRMM.append(cumuTRMM)
 
+            meanCount +=1
         # end of while( dayCounter <= lapEnd):
 
         print "Mean by", meanCount
