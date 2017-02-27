@@ -4,12 +4,12 @@ from rain import *
 
 print "MAIN: This is the main script"
 hostPath = "/media/sf_myshareDebianMain/"
-splitLength = 90
+splitLength = 365
 # 1 is by day
 # 30
 # 365
-isMeaned = True
-bySeason = False # use only with isMeaned set to True
+isMeaned = False
+bySeason = True # use only with isMeaned set to True
 # Wet: 11-4
 # dry: 5-10
 
@@ -214,6 +214,13 @@ for station in dataSpanish:
                 totalSpanish2.append(dSpanish2)
                 totalTRMM2.append(dTRMM2)
                 print totalTRMM2
+
+        elif bySeason and not isMeaned:
+            totalSpanish.extend(dSpanish)
+            totalTRMM.extend(dTRMM)
+            totalSpanish2.extend(dSpanish2)
+            totalTRMM2.extend(dTRMM2)
+
         else:
             totalSpanish.extend(dSpanish)
             totalTRMM.extend(dTRMM)
@@ -262,8 +269,9 @@ for station in dataSpanish:
             plt.ylabel('dSpanish')
             plt.scatter(dTRMM, dSpanish, c= "blue")
         elif plotType == 3:
-            if not isMeaned:
-                plotAOverB(dTRMM, dSpanish, False)
+            print "ha"
+            #if not isMeaned:
+             #   plotAOverB(dTRMM, dSpanish, False,"blue", "na")
 
         elif plotType == 4:
             plt.scatter(dTRMM, dSpanish, c= "blue")
@@ -324,9 +332,12 @@ if plotType == 333:
 if plotType == 3:
     fig = plt.figure()
 
-    popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "dry")
+
     if bySeason:
+        popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "dry")
         popt2,r_squared2 = plotAOverB(totalTRMM2, totalSpanish2, True, "red", "wet")
+    else:
+        popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "na")
  ####################################################
     pre = ""
     if isMeaned:
