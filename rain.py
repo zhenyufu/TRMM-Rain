@@ -232,11 +232,10 @@ def plotAOverB(totalTRMM, totalSpanish ,drawCurve, col, lab):
     smallNum = 0.1
     delList = set() # fucking set !!
     for f in range(0, len(totalSpanish)):
-        if totalSpanish[f] < smallNum:
+        if totalSpanish[f] < smallNum or Math.isnan( totalSpanish[f]):
             delList.add(f)
-
     for f in range(0, len(totalTRMM)):
-        if totalTRMM[f] < smallNum:
+        if totalTRMM[f] < smallNum or Math.isnan( totalSpanish[f]):
             delList.add(f)
 
     for i in sorted(delList, reverse=True):
@@ -251,8 +250,13 @@ def plotAOverB(totalTRMM, totalSpanish ,drawCurve, col, lab):
 
     plt.scatter(totalSpanish, fdiv ,c= col, label=lab)
 
-    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(1, -0.87))
+    #popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(1, -0.87))
+    popt, pcov = curve_fit(curvePower, totalSpanish, fdiv, p0 = (0.8, -0.8))
+    print "plotting stuff:"
+    print "x-totalSpanish:", totalSpanish
+    print "y-fdiv:" , fdiv
     print popt
+    print pcov
     xx = np.linspace(0.1, max(totalSpanish), 100)
     yy = curvePower(xx, *popt)
     plt.plot(xx,yy, c=col)

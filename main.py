@@ -208,9 +208,12 @@ for station in dataSpanish:
 
         print "Mean by", meanCount
         if isMeaned:
+            print dSpanish
             dSpanish = np.mean(dSpanish)
             dTRMM = np.mean(dTRMM)
             totalSpanish.append(dSpanish)
+            print "station:" + station.fileName
+            print dSpanish
             totalTRMM.append(dTRMM)
 
             if bySeason:
@@ -346,7 +349,7 @@ if plotType == 3:
  ####################################################
     pre = ""
     if isMeaned:
-        pre = "isMeaned - "
+        pre = "isMeaned " + str(splitLength) + "-"
     if bySeason:
         pre+= "bySeason - Dry: "
     title = pre + "y=" + str(popt[0]) + " x^(" + str(popt[1]) + ")" + "\n      Rsqrt: " + str(r_squared)
