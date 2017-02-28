@@ -68,6 +68,7 @@ class StationData:
 
         self.lat = 0
         self.lon = 0
+        self.elevation = 0
 
         self.rowNum = tempArray.shape[0]
         self.colNum = 1 # 1 for the data

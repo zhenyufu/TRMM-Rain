@@ -8,8 +8,10 @@ splitLength = 365
 # 1 is by day
 # 30
 # 365
+plotElevation = True # use only with isMeaned = True
+
 isMeaned = True
-bySeason = False # use only with isMeaned set to True
+bySeason = False # e
 # Wet: 11-4
 # dry: 5-10
 
@@ -28,13 +30,13 @@ kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 
 ###########################################################
 print "reading spanish data"
-f = open('_data/dataSpanish_0.1', 'rb')
+f = open('_data/dataSpanish_0.2', 'rb')
 dataSpanish = pickle.load(f)
 for data in dataSpanish:
     print data.fileName
     print data.lat , ",", data.lon
     print data.dateList[0] , "to", data.dateList[-1]
-
+    print data.elevation
 
 
 
@@ -59,6 +61,8 @@ totalTRMM = []
 totalSpanish2 = []
 totalTRMM2 = []
 
+errorArray = []
+elevationArray = []
 ##############################################
 for station in dataSpanish:
     print "######### processing:",station.fileName
@@ -102,7 +106,6 @@ for station in dataSpanish:
 
         #print dSpanish.shape
         #print dTRMM.shape
-
 
 
         # interate through the overlap time and get the useable dates
@@ -209,6 +212,8 @@ for station in dataSpanish:
         print "Mean by", meanCount
         if isMeaned:
             print dSpanish
+            if not overLap < splitLength:
+                elevationArray.append(station.elevation)
             dSpanish = np.mean(dSpanish)
             dTRMM = np.mean(dTRMM)
             totalSpanish.append(dSpanish)
@@ -242,6 +247,10 @@ for station in dataSpanish:
         pnt.coords = [(station.lon, station.lat)]
         #comp = compareList(dSpanish, dTRMM)
         comp = compareListDistance(dSpanish, dTRMM, isMeaned)
+
+        if not overLap < splitLength:
+            print "Error: " , comp
+            errorArray.append(comp);
         # TRMM overestimates
         if comp > 0:
             pnt.style.labelstyle.color = simplekml.Color.red
@@ -318,7 +327,7 @@ for station in dataSpanish:
 
     else:
         print "No OverLap in" , station.fileName
-
+        # calculate annual ?
 
 # plots for total check in excel
 if plotType == 333:
@@ -361,6 +370,35 @@ if plotType == 3:
     plt.ylabel("totalTRMM/totalSpanish")
     plt.legend(loc='upper right')
     plt.show()
+
+if plotElevation and isMeaned:
+
+    fig = plt.figure()
+    plt.scatter(totalSpanish,elevationArray, c= "blue")
+    plt.xlabel('totalSpanish')
+    plt.ylabel("elevation (m)")
+    title = "mean " + str(splitLength) + "- vs elevation "
+    fig.suptitle( title, fontsize=20)
+    plt.show()
+
+    fig = plt.figure()
+    fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+    plt.scatter(fdiv,elevationArray, c= "blue")
+    plt.xlabel('fdiv')
+    plt.ylabel("elevation (m)")
+    title = "mean " + str(splitLength) + "- vs elevation vs fdiv"
+    fig.suptitle( title, fontsize=20)
+    plt.show()
+
+
+    #fig = plt.figure()
+    #fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+    #plt.scatter(errorArray,elevationArray, c= "blue")
+    ##plt.xlabel('errorArray')
+    #plt.ylabel("elevation (m)")
+    #title = "mean " + str(splitLength) + "- vs elevation vs error"
+    #fig.suptitle( title, fontsize=20)
+    #plt.show()
 
 
 kml.save(kmlName)
