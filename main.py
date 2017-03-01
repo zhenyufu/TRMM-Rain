@@ -30,7 +30,7 @@ kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 
 ###########################################################
 print "reading spanish data"
-f = open('_data/dataSpanish_0.2', 'rb')
+f = open('_data/dataSpanish_0.3', 'rb')
 dataSpanish = pickle.load(f)
 for data in dataSpanish:
     print data.fileName
@@ -64,7 +64,15 @@ totalTRMM2 = []
 errorArray = []
 elevationArray = []
 ##############################################
+iStation = 0
 for station in dataSpanish:
+    dataSpanish[iStation].lapStart = "na"
+    dataSpanish[iStation].lapEnd = "na"
+    dataSpanish[iStation].numOverlap = 0
+    dataSpanish[iStation].numObservation = 0# overLap - missCount
+    dataSpanish[iStation].numOfMissing =  0 #missCount
+
+
     print "######### processing:",station.fileName
     nearLat = 0
     nearLon = 0
@@ -86,6 +94,11 @@ for station in dataSpanish:
             overLap = (lapEnd - lapStart).days
         print "days: ", overLap
         print lapStart, "to", lapEnd
+        dataSpanish[iStation].lapStart = lapStart
+        dataSpanish[iStation].lapEnd = lapEnd
+        dataSpanish[iStation].numOverlap = overLap
+        # station.numObservation = len(station.dateList)
+        # station.numOfMissing = overLap - len(station.dateList)
 
         # acess index
         #indexStationStart = station.dateList.index(lapStart)
@@ -127,7 +140,7 @@ for station in dataSpanish:
             while not(dayCounter.month == 5 or dayCounter.month == 12):
                 dayCounter += datetime.timedelta(days=1)
 
-
+        missCount = 0
         while( dayCounter <= lapEnd):
             # for everyday in slpitLength
             # print dayCounter
@@ -189,6 +202,7 @@ for station in dataSpanish:
                     #    print dayCounter, "and", overLap
                 except:
                     # this date is not in one of the two lists
+                    missCount +=1
                     dayCounter += datetime.timedelta(days=1)
                     continue
 
@@ -208,6 +222,11 @@ for station in dataSpanish:
 
             meanCount +=1
         # end of while( dayCounter <= lapEnd):
+
+
+        dataSpanish[iStation].numObservation = overLap - missCount
+        dataSpanish[iStation].numOfMissing = missCount
+
 
         print "Mean by", meanCount
         if isMeaned:
@@ -329,6 +348,7 @@ for station in dataSpanish:
         print "No OverLap in" , station.fileName
         # calculate annual ?
 
+    iStation+=1
 # plots for total check in excel
 if plotType == 333:
 
