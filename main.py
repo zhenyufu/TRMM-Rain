@@ -3,8 +3,9 @@ from rain import *
 
 
 print "MAIN: This is the main script"
-hostPath = "/media/sf_myshareDebianMain/"
+#hostPath = "/media/sf_myshareDebianMain/"
 splitLength = 365
+yearThreshold = 0.1 # 10%
 # 1 is by day
 # 30
 # 365
@@ -30,7 +31,7 @@ kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 
 ###########################################################
 print "reading spanish data"
-f = open('_data/dataSpanish_0.3', 'rb')
+f = open('_data/dataSpanish_0.5', 'rb')
 dataSpanish = pickle.load(f)
 for data in dataSpanish:
     print data.fileName
@@ -71,8 +72,9 @@ for station in dataSpanish:
     dataSpanish[iStation].numOverlap = 0
     dataSpanish[iStation].numObservation = 0# overLap - missCount
     dataSpanish[iStation].numOfMissing =  0 #missCount
-
-
+    if splitLength == 365 and isMeaned:
+        dataSpanish[iStation].meanAP = 0
+        dataSpanish[iStation].yearUsed = ""
     print "######### processing:",station.fileName
     nearLat = 0
     nearLon = 0
@@ -187,7 +189,7 @@ for station in dataSpanish:
 
                 seasonId = isDrySeason(dayCounter.month)
                 continue
-
+            tempMiss  = 0
             # else ##################
             for i in range(0, splitLength):
                 if (dayCounter > lapEnd):
@@ -203,7 +205,11 @@ for station in dataSpanish:
                 except:
                     # this date is not in one of the two lists
                     missCount +=1
+                    tempMiss +=1
+                    #if (station.fileName != "raw_senamhi/cusco4.csv" and station.fileName != "raw_senamhi/cusco5.csv" and station.fileName != "raw_senamhi/cusco6.csv"):
+                    #    i-=1
                     dayCounter += datetime.timedelta(days=1)
+
                     continue
 
                 # get the prep only if the station is not -1
@@ -214,15 +220,23 @@ for station in dataSpanish:
                 dayCounter += datetime.timedelta(days=1)
             if (dataDone):
                 break;
-            # end for i in range(0, splitLength):
-            dDate.append(cumuDay)
-            dSpanish.append(cumuSpanish)
-            #dTRMM.append(dataTRMM.variables['precipitation'][iTRMM,nearLon,nearLat])
-            dTRMM.append(cumuTRMM)
 
-            meanCount +=1
+            if splitLength == 365 and isMeaned:
+                print dayCounter.year - 1, "-", dayCounter.year , "had miss points: " , tempMiss ,"/365 = " , str((tempMiss) / 365.0)
+                        # end for i in range(0, splitLength):
+            if splitLength == 365 and isMeaned:
+                if (tempMiss) / 365.0 < yearThreshold:
+                    dDate.append(cumuDay)
+                    dSpanish.append(cumuSpanish)
+                    dTRMM.append(cumuTRMM)
+                    meanCount +=1
+                    dataSpanish[iStation].yearUsed += ( str(dayCounter.year - 1) + "-to-" + str(dayCounter.year) + " | " )
+            else:
+                dDate.append(cumuDay)
+                dSpanish.append(cumuSpanish)
+                dTRMM.append(cumuTRMM)
+                meanCount +=1
         # end of while( dayCounter <= lapEnd):
-
 
         dataSpanish[iStation].numObservation = overLap - missCount
         dataSpanish[iStation].numOfMissing = missCount
@@ -237,7 +251,9 @@ for station in dataSpanish:
             dTRMM = np.mean(dTRMM)
             totalSpanish.append(dSpanish)
             print "station:" + station.fileName
-            print dSpanish
+            print "meaned is:" ,dSpanish
+            if splitLength == 365 and isMeaned:
+               dataSpanish[iStation].meanAP = dSpanish
             totalTRMM.append(dTRMM)
 
             if bySeason:

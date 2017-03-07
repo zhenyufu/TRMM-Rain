@@ -12,6 +12,8 @@ from pylab import *
 from scipy.optimize import curve_fit
 import math as Math
 
+hostPath = "/media/sf_myshareDebianMain/"
+
 def strToNum(tempList):
     print tempList.shape
     a = np.zeros(shape=(tempList.shape))

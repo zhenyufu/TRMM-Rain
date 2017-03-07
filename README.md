@@ -31,3 +31,14 @@ Run
 
 
 python -i main.py
+
+## change Log
+
+dataSpanish_0.5 added meanAP
+dataSpanish_0.6 added string of time covered  
+
+
+
+
+
+

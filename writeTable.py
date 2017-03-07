@@ -1,12 +1,12 @@
 from rain import *
 
-f = open('_data/dataSpanish_0.4', 'rb')
+f = open('_data/dataSpanish_0.6', 'rb')
 dataSpanish = pickle.load(f)
 
-myFile = "table.csv"
+myFile = hostPath + "table.csv"
 myHandler = open(myFile,"w")
 myWriter = csv.writer(myHandler)
-row = ["fileName", "mapId", "Lat", "Lon", "Elevation(m)","startDate", "endDate", "lapStart", "lapEnd", "numOverLap", "numObservation", "numOfMissing"]
+row = ["fileName", "mapId", "Lat", "Lon", "Elevation(m)","startDate", "endDate", "lapStart", "lapEnd", "numOverLap", "numObservation", "numOfMissing", "meanAP", "yearUsed"]
 myWriter.writerow(row)
 
 for station in dataSpanish:
@@ -23,7 +23,8 @@ for station in dataSpanish:
     row.append(station.numOverlap)
     row.append(station.numObservation)
     row.append(station.numOfMissing)
-
+    row.append(station.meanAP)
+    row.append(station.yearUsed)
     #row.append(isRain)
 
     myWriter.writerow(row)
