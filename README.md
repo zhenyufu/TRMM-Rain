@@ -36,7 +36,7 @@ python -i main.py
 
 dataSpanish_0.5 added meanAP
 dataSpanish_0.6 added string of time covered  
-
+dataSpanish_0.7 added TRMMUsedMAP and TRMMAllMAP  
 
 
 

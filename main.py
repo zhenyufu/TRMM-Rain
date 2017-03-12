@@ -15,15 +15,13 @@ isMeaned = True
 bySeason = False # e
 # Wet: 11-4
 # dry: 5-10
-
+doCalTRMMAll = True
 
 plotType = 3
 # 0 doulbe scatter with time
 # 1 double line with time
 # 2 correlation
 # 3 ratio over weather station
-
-# 4 correlation with range
 # 5 differnt x  - not working yet
 kml = simplekml.Kml()
 kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
@@ -31,7 +29,7 @@ kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 
 ###########################################################
 print "reading spanish data"
-f = open('_data/dataSpanish_0.5', 'rb')
+f = open('_data/dataSpanish_0.7', 'rb')
 dataSpanish = pickle.load(f)
 for data in dataSpanish:
     print data.fileName
@@ -72,9 +70,15 @@ for station in dataSpanish:
     dataSpanish[iStation].numOverlap = 0
     dataSpanish[iStation].numObservation = 0# overLap - missCount
     dataSpanish[iStation].numOfMissing =  0 #missCount
+
+
     if splitLength == 365 and isMeaned:
         dataSpanish[iStation].meanAP = 0
         dataSpanish[iStation].yearUsed = ""
+        dataSpanish[iStation].TRMMUsedMAP = 0
+        dataSpanish[iStation].TRMMAllMAP = 0
+
+
     print "######### processing:",station.fileName
     nearLat = 0
     nearLon = 0
@@ -87,6 +91,27 @@ for station in dataSpanish:
     print "using location(lat,lon)", nearLat, "," , nearLon
     print "with index" , iLat, iLon
     # get time range
+
+
+    # calculate dataSpanish[iStation].TRMMAllMAP
+    if splitLength == 365 and isMeaned and  doCalTRMMAll:
+        allByYear = []
+        allOneYear = 0
+        currentYear = 1998
+        tempDay = datetime.date(1998,1,1)
+        while tempDay != datetime.date(2016,1,1): # ignore the rest of 2016 to 10/30
+            i = TRMMDateList.index(tempDay)
+            allOneYear += dataTRMM.variables['precipitation'][i,iLon,iLat];
+            tempDay += datetime.timedelta(days=1)
+            if tempDay.year != currentYear:
+                #print "year: ", currentYear, "had",allOneYear, "which was up to the day before ", tempDay
+                currentYear +=1
+                allByYear.append(allOneYear)
+                allOneYear = 0
+        dataSpanish[iStation].TRMMAllMAP = np.mean(allByYear)
+
+
+
 
     overLap , lapStart, lapEnd = getOverlap(TRMMDateList[0], TRMMDateList[-1], station.dateList[0], station.dateList[-1])
     if overLap > 0:
@@ -253,7 +278,8 @@ for station in dataSpanish:
             print "station:" + station.fileName
             print "meaned is:" ,dSpanish
             if splitLength == 365 and isMeaned:
-               dataSpanish[iStation].meanAP = dSpanish
+                dataSpanish[iStation].meanAP = dSpanish
+                dataSpanish[iStation].TRMMUsedMAP = dTRMM
             totalTRMM.append(dTRMM)
 
             if bySeason:
