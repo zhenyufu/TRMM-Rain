@@ -10,7 +10,7 @@ yearThreshold = 0.1 # 10%
 # 30
 # 365
 plotElevation = True # use only with isMeaned = True
-
+calEveryMonth = True
 isMeaned = True
 bySeason = False # e
 seasonThreshold = 0.1
@@ -169,6 +169,9 @@ for station in dataSpanish:
                 dayCounter += datetime.timedelta(days=1)
 
         missCount = 0
+        monthCumu = 0
+        monthCurrent =  dayCounter.month
+
         while( dayCounter <= lapEnd):
             # for everyday in slpitLength
             # print dayCounter
@@ -250,9 +253,21 @@ for station in dataSpanish:
                     cumuSpanish += p
                     cumuTRMM += dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
                 dayCounter += datetime.timedelta(days=1)
+
+                if calEveryMonth:
+                    if monthCurrent == dayCounter.month:
+                        monthCumu += p
+                        #if station.fileName == "raw_senamhi/cusco4.csv" and monthCurrent == 2 :
+                        #    print "adding" , str (dataTRMM.variables['precipitation'][iTRMM,iLon,iLat])
+
+                    else:
+                        monthCumu += p # last day
+                        print "for" , str(dayCounter.year), ":"  ,str(monthCurrent) , "-" , str(dayCounter.month), "has", str(monthCumu)
+                        monthCurrent =  dayCounter.month
+                        monthCumu = 0
+
             if (dataDone):
                 break;
-
             if splitLength == 365 and isMeaned:
                 print dayCounter.year - 1, "-", dayCounter.year , "had miss points: " , tempMiss ,"/365 = " , str((tempMiss) / 365.0)
                         # end for i in range(0, splitLength):
