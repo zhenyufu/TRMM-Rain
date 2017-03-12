@@ -13,9 +13,10 @@ plotElevation = True # use only with isMeaned = True
 
 isMeaned = True
 bySeason = False # e
+seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
-doCalTRMMAll = True
+doCalTRMMAll = False #True
 
 plotType = 3
 # 0 doulbe scatter with time
@@ -183,6 +184,7 @@ for station in dataSpanish:
                     dayCounter += datetime.timedelta(days=1)
                     continue
 
+                seasonMiss = 0
                 while isDrySeason(dayCounter.month) ==  seasonId:
 
 
@@ -191,6 +193,7 @@ for station in dataSpanish:
                         iTRMM = TRMMDateList.index(dayCounter)
                     except:
                         dayCounter += datetime.timedelta(days=1)
+                        seasonMiss +=1
                         continue
                     p = station.listPrep[iSpanish]
                     if p >= 0:
@@ -207,10 +210,14 @@ for station in dataSpanish:
                         continue
 
                     dayCounter += datetime.timedelta(days=1)
-                dSpanish.append(cumuSpanish)
-                dTRMM.append(cumuTRMM)
-                dSpanish2.append(cumuSpanish2)
-                dTRMM2.append(cumuTRMM2)
+                print "missed days in season", seasonMiss
+
+                if (seasonMiss) / 180.0 < seasonThreshold:
+                    # seasonMiss = 0
+                    dSpanish.append(cumuSpanish)
+                    dTRMM.append(cumuTRMM)
+                    dSpanish2.append(cumuSpanish2)
+                    dTRMM2.append(cumuTRMM2)
 
                 seasonId = isDrySeason(dayCounter.month)
                 continue
@@ -265,7 +272,7 @@ for station in dataSpanish:
 
         dataSpanish[iStation].numObservation = overLap - missCount
         dataSpanish[iStation].numOfMissing = missCount
-
+        print "total missed:", missCount
 
         print "Mean by", meanCount
         if isMeaned:
