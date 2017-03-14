@@ -308,16 +308,17 @@ def pointLineDistance(x, y, x1, y1, x2, y2):
     return sq
 
 def isDrySeason(month):
-    #if month >= 5 and  month <= 10:
-    #    return True
-    #else:
-    #    return False
-    if month >= 5 and  month <= 9:
-        return 1
-    elif month <= 3 or month == 12 :
-        return 2
+    if month >= 5 and  month <= 10:
+        return 1#True
+    else:
+        return 2#False
 
-    return -1
+    #if month >= 5 and  month <= 9:
+    #    return 1
+    #elif month <= 3 or month == 12 :
+    #    return 2
+
+    #return -1
 
 def getRainOnDay(d):
     print "l"

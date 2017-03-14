@@ -26,7 +26,9 @@ plotType = 3
 # 5 differnt x  - not working yet
 kml = simplekml.Kml()
 kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
-
+isClark = False
+clarkRain = [1908, 2148, 1752, 2940, 4140, 4116, 5436]
+clarkTRMM = [1800, 2516, 1600, 3154, 4152, 3998, 4831]
 
 ###########################################################
 print "reading spanish data"
@@ -217,10 +219,12 @@ for station in dataSpanish:
 
                 if (seasonMiss) / 180.0 < seasonThreshold:
                     # seasonMiss = 0
-                    dSpanish.append(cumuSpanish)
-                    dTRMM.append(cumuTRMM)
-                    dSpanish2.append(cumuSpanish2)
-                    dTRMM2.append(cumuTRMM2)
+                    if seasonId == 1:
+                        dSpanish.append(cumuSpanish)
+                        dTRMM.append(cumuTRMM)
+                    elif seasonId == 2:
+                        dSpanish2.append(cumuSpanish2)
+                        dTRMM2.append(cumuTRMM2)
 
                 seasonId = isDrySeason(dayCounter.month)
                 continue
@@ -291,7 +295,7 @@ for station in dataSpanish:
 
         print "Mean by", meanCount
         if isMeaned:
-            print dSpanish
+            print "dSpanish", dSpanish
             if not overLap < splitLength:
                 elevationArray.append(station.elevation)
             dSpanish = np.mean(dSpanish)
@@ -438,7 +442,21 @@ if plotType == 3:
         popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "dry")
         popt2,r_squared2 = plotAOverB(totalTRMM2, totalSpanish2, True, "red", "wet")
     else:
-        popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "na")
+
+        #if isClark:
+         #   totalSpanish.extend(clarkRain)
+          #  totalTRMM.extend(clarkTRMM)
+
+
+        popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "data")
+
+        if isClark:
+            # add clark data
+            cDiv = [float(ai)/bi for ai,bi in zip(clarkTRMM, clarkRain)]
+            clarkRain = [float(f/1000) for f in clarkRain]
+            plt.scatter(clarkRain, cDiv ,c= "red", label="Clark")
+            plt.ylim([0,7])
+
  ####################################################
     pre = ""
     if isMeaned:
