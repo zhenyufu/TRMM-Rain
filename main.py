@@ -12,7 +12,7 @@ yearThreshold = 0.1 # 10%
 plotElevation = True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = False # e
+bySeason = True #False # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
@@ -167,7 +167,7 @@ for station in dataSpanish:
 
         if bySeason:
             # must start by 5 or 11
-            while not(dayCounter.month == 5 or dayCounter.month == 12):
+            while not(dayCounter.month == 5 or dayCounter.month == 11):
                 dayCounter += datetime.timedelta(days=1)
 
         missCount = 0
@@ -190,6 +190,7 @@ for station in dataSpanish:
                     continue
 
                 seasonMiss = 0
+                print "season start:", dayCounter
                 while isDrySeason(dayCounter.month) ==  seasonId:
 
 
@@ -204,6 +205,10 @@ for station in dataSpanish:
                     if p >= 0:
                         addSpanish = p
                         addTRMM = dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
+                    else:
+                        seasonMiss +=1
+                        dayCounter += datetime.timedelta(days=1)
+                        continue
 
                     if isDrySeason(dayCounter.month) == 1:
                         cumuSpanish += addSpanish
@@ -215,8 +220,14 @@ for station in dataSpanish:
                         continue
 
                     dayCounter += datetime.timedelta(days=1)
+                print "season end:", dayCounter
                 print "missed days in season", seasonMiss
 
+                if isDrySeason(dayCounter.month) == 1:
+                    print str(cumuSpanish2)
+                elif isDrySeason(dayCounter.month) == 2:
+                    print str(cumuSpanish)
+                print "**********"
                 if (seasonMiss) / 180.0 < seasonThreshold:
                     # seasonMiss = 0
                     if seasonId == 1:
@@ -296,6 +307,7 @@ for station in dataSpanish:
         print "Mean by", meanCount
         if isMeaned:
             print "dSpanish", dSpanish
+            print "dSpanish2", dSpanish2
             if not overLap < splitLength:
                 elevationArray.append(station.elevation)
             dSpanish = np.mean(dSpanish)
