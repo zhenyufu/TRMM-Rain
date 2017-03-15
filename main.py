@@ -12,7 +12,7 @@ yearThreshold = 0.1 # 10%
 plotElevation = True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = True #False # e
+bySeason = False #False # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
@@ -32,7 +32,7 @@ clarkTRMM = [1800, 2516, 1600, 3154, 4152, 3998, 4831]
 
 ###########################################################
 print "reading spanish data"
-f = open('_data/dataSpanish_0.7', 'rb')
+f = open('_data/dataSpanish_0.8.1', 'rb')
 dataSpanish = pickle.load(f)
 for data in dataSpanish:
     print data.fileName
@@ -205,8 +205,11 @@ for station in dataSpanish:
                     if p >= 0:
                         addSpanish = p
                         addTRMM = dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
+                        #if station.fileName == "raw_senamhi/cusco4.csv" and  dayCounter.year == 2007 and dayCounter.month == 3:
+                         #   print "on" ,dayCounter , "and p is", str(p)
                     else:
                         seasonMiss +=1
+                        print "got" , str(p) , "on" , dayCounter, "----", str(cumuSpanish2)
                         dayCounter += datetime.timedelta(days=1)
                         continue
 
@@ -267,6 +270,11 @@ for station in dataSpanish:
                 if p >= 0:
                     cumuSpanish += p
                     cumuTRMM += dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
+                else:
+                    missCount +=1
+                    dayCounter += datetime.timedelta(days=1)
+                    continue
+
                 dayCounter += datetime.timedelta(days=1)
 
                 if calEveryMonth:

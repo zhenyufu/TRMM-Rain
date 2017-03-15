@@ -1,7 +1,7 @@
 from rain import *
 
-oldFile = "_data/dataSpanish_0.7"
-newFile = "_data/dataSpanish_0.8"
+oldFile = "_data/dataSpanish_0.8"
+newFile = "_data/dataSpanish_0.9"
 
 f = open(oldFile, 'rb')
 dataSpanish = pickle.load(f)

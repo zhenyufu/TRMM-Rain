@@ -23,9 +23,9 @@ def strToNum(tempList):
         try:
             x = i.astype(np.float)
         except:
-            x = -1
+            x = -999
         if x < 0:
-            x = -1
+            x = -999
         a[position] = x
         position += 1
     return a

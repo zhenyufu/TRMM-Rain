@@ -38,7 +38,7 @@ dataSpanish_0.5 added meanAP
 dataSpanish_0.6 added string of time covered  
 dataSpanish_0.7 added TRMMUsedMAP and TRMMAllMAP 
 dataSpanish_0.8 added actual station names 
-
+dataSpanish_0.8.1 changed to invalidating everythin -999 -1 and empty
 
 
 

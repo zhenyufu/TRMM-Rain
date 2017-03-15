@@ -1,6 +1,6 @@
 from rain import *
 
-f = open('_data/dataSpanish_0.8', 'rb')
+f = open('_data/dataSpanish_0.8.1', 'rb')
 dataSpanish = pickle.load(f)
 
 myFile = hostPath + "table.csv"
