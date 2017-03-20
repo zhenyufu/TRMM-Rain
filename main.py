@@ -12,7 +12,7 @@ yearThreshold = 0.1 # 10%
 plotElevation = True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = False #False # e
+bySeason = True #False # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
@@ -459,8 +459,8 @@ if plotType == 3:
 
 
     if bySeason:
-        popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "dry")
-        popt2,r_squared2 = plotAOverB(totalTRMM2, totalSpanish2, True, "red", "wet")
+        popt, pcov, r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "dry")
+        popt2, pcov2, r_squared2 = plotAOverB(totalTRMM2, totalSpanish2, True, "red", "wet")
     else:
 
         #if isClark:
@@ -468,7 +468,7 @@ if plotType == 3:
           #  totalTRMM.extend(clarkTRMM)
 
 
-        popt,r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "data")
+        popt, pcov, r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "data")
 
         if isClark:
             # add clark data

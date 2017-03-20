@@ -60,6 +60,13 @@ def monthToNum(month):
     return x
 
 
+class CorrelationData:
+    def __init__(self, name, popt, pcov, rsqrt):
+        self.name = name
+        self.popt = popt
+        self.pcov = pcov
+        self.rsqrt = rsqrt
+
 # have a list of date and a np array of the precipitation
 class StationData:
     def __init__(self, tempArray, fileName):
@@ -269,7 +276,7 @@ def plotAOverB(totalTRMM, totalSpanish ,drawCurve, col, lab):
     ss_res = np.sum(residuals**2)
     ss_tot = np.sum((fdiv-np.mean(fdiv))**2)
     r_squared = 1 - (ss_res / ss_tot)
-    return popt, r_squared
+    return popt, pcov, r_squared
 
 
 

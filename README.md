@@ -32,7 +32,7 @@ Run
 
 python -i main.py
 
-## change Log
+## _data change Log
 
 dataSpanish_0.5 added meanAP
 dataSpanish_0.6 added string of time covered  
@@ -42,4 +42,5 @@ dataSpanish_0.8.1 changed to invalidating everythin -999 -1 and empty
 
 
 
+dataCorrelation_0.1 added dry and wet correlation data 
 
