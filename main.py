@@ -44,19 +44,22 @@ for data in dataSpanish:
 
 print "reading TRMM data"
 #dataTRMM = readTRMM("../TRMM_3B42_Daily_precipitation.7.SouthAmerica.nc")
-dataTRMM = readTRMM("../TRMM_3B42_Daily.1998-2016.7.SouthAmerica.nc")
+dataTRMM ,TRMMDateList = readTRMM("../TRMM_3B42_Daily.1998-2016.7.SouthAmerica.nc")
 
 
 
 #TRMM date fixi
-TRMMDateList = []
-TRMMDate = datetime.date(1998,1,1)
+#TRMMDateList = []
+#TRMMDate = datetime.date(1998,1,1)
 
-for i in range(0, 6878):
-     TRMMDateList.append(TRMMDate)
-     TRMMDate += datetime.timedelta(days=1)
+#for i in range(0, 6878):
+#     TRMMDateList.append(TRMMDate)
+#     TRMMDate += datetime.timedelta(days=1)
 
-print TRMMDateList[0], "to", TRMMDateList[-1]
+#print TRMMDateList[0], "to", TRMMDateList[-1]
+
+
+
 
 totalSpanish = []
 totalTRMM = []

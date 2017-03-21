@@ -11,6 +11,8 @@ import simplekml
 from pylab import *
 from scipy.optimize import curve_fit
 import math as Math
+from mpl_toolkits.basemap import Basemap, cm
+
 
 hostPath = "/media/sf_myshareDebianMain/"
 
@@ -144,7 +146,19 @@ def readSpanish(path):
 def readTRMM(path):
     print "read from " + path
     print "*************************"
-    return netCDF4.Dataset(path,'r')
+
+    dataTRMM = netCDF4.Dataset(path,'r')
+    #TRMM date fixi
+    TRMMDateList = []
+    TRMMDate = datetime.date(1998,1,1)
+
+    for i in range(0, 6878):
+        TRMMDateList.append(TRMMDate)
+        TRMMDate += datetime.timedelta(days=1)
+
+    print TRMMDateList[0], "to", TRMMDateList[-1]
+
+    return dataTRMM, TRMMDateList
 
 
 
