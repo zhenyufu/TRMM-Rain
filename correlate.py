@@ -1,7 +1,7 @@
 from rain import *
 
 proj = "mill" # "stere"
-cFile = "_data/dataCorrelation_0.1"
+cFile = "_data/dataCorrelation_0.2"
 imageDir = "img/"
 imagePre = "rain"
 imageSave = True
@@ -13,6 +13,10 @@ f = open(cFile, 'rb')
 dataCorrelation = pickle.load(f)
 dataTRMM ,TRMMDateList = readTRMM("../TRMM_3B42_Daily.1998-2016.7.SouthAmerica.nc")
 print "finished data reading"
+print "Using dry" , dataCorrelation[0].popt
+print "Using wet" , dataCorrelation[1].popt
+
+
 if imageShow:
     plt.ion()
 
@@ -20,43 +24,11 @@ if imageShow:
 latArray = dataTRMM.variables['lat'][:]
 lonArray = dataTRMM.variables['lon'][:]
 
-
-
-def doDrawRain(i):
-    #prepArray = dataTRMM.variables['precipitation'][1,:,:];
-    myDate = TRMMDateList[i]
-    prepArray = dataTRMM.variables['precipitation'][i,:,:]
+def doSubplot(fig, prepArray, myDate, pid, pName):
+    ax = fig.add_subplot(pid)
+    ax.set_title(pName)
     nx = prepArray.shape[0]
     ny = prepArray.shape[1]
-
-    # create figure and axes instances
-    fig = plt.figure(figsize=(8,8))
-    #ax = fig.add_axes([0.1,0.1,0.8,0.8])
-
-    # apply correlation correction
-    # dry season
-    imageSeason = ""
-    iSeason = -1
-    if isDrySeason(myDate.month):
-        iSeason = 0
-        imageSeason = "dry"
-    else:
-        iSeason = 1
-        imageSeason = "wet"
-
-    # correction
-    if doCorrection:
-        #plot the original
-
-        popt = dataCorrelation[iSeason].popt
-        a = popt[0]
-        b = popt[1]
-        prepArray = ((prepArray[:]) / a )**(1/(b+1))
-
-        #ax = fig.add_subplot(121)
-        #ax.set_title('original')
-
-
 
 
     # setup basemap.
@@ -86,9 +58,49 @@ def doDrawRain(i):
     cbar = m.colorbar(cs,location='bottom',pad="5%")
     cbar.set_label('mm')
 
+
+
+
+
+def doDrawRain(i):
+    myDate = TRMMDateList[i]
+    prepArray = dataTRMM.variables['precipitation'][i,:,:]
+
+
+    # create figure and axes instances
+    fig = plt.figure(figsize=(8,8))
+    doSubplot(fig, prepArray, myDate, 121,"Original")
+
+
+    # apply correlation correction
+    # dry season
+    imageSeason = ""
+    iSeason = -1
+    if isDrySeason(myDate.month) == 1:
+        iSeason = 0
+        imageSeason = "dry"
+    else:
+        iSeason = 1
+        imageSeason = "wet"
+
+    # correction
+    if doCorrection:
+        #plot the original
+
+        popt = dataCorrelation[iSeason].popt
+        #print popt
+        a = popt[0]
+        b = popt[1]
+        #prepArray = ((prepArray[:])/1000.0 / a )**(1/(b+1)) * 1000.0
+        prepArray = ((prepArray[:])/ a )**(1/(b+1))
+        #ax = fig.add_subplot(121)
+        #ax.set_title('original')
+        doSubplot(fig, prepArray, myDate, 122, "Corrected")
+
+
     #########################
     print "Finished:" , str(myDate)
-    plt.title("Hi: " +  str(myDate) + " - season: "+ imageSeason)
+    fig.suptitle("Hi: " +  str(myDate) + " - season: "+ imageSeason)
 
     if imageShow:
         plt.show()

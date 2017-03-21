@@ -476,7 +476,7 @@ if plotType == 3:
         if isClark:
             # add clark data
             cDiv = [float(ai)/bi for ai,bi in zip(clarkTRMM, clarkRain)]
-            clarkRain = [float(f/1000) for f in clarkRain]
+            #clarkRain = [float(f/1000) for f in clarkRain]
             plt.scatter(clarkRain, cDiv ,c= "red", label="Clark")
             plt.ylim([0,7])
 

@@ -42,5 +42,7 @@ dataSpanish_0.8.1 changed to invalidating everythin -999 -1 and empty
 
 
 
-dataCorrelation_0.1 added dry and wet correlation data 
+dataCorrelation_0.1 added dry and wet correlation data
+dataCorrelation_0.2 changed units to mm
+
 

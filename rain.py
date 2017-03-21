@@ -270,7 +270,8 @@ def plotAOverB(totalTRMM, totalSpanish ,drawCurve, col, lab):
     fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
 
 
-    totalSpanish = [float(f/1000) for f in totalSpanish]
+    #totalSpanish = [float(f/1000) for f in totalSpanish]
+    plt.ylim([0,7])
 
     plt.scatter(totalSpanish, fdiv ,c= col, label=lab)
 
