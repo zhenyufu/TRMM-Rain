@@ -8,6 +8,9 @@ imageSave = True
 imageShow = False
 doCorrection = True
 
+aFile = "_data/dataAnnualRatio_0.1"
+fa = open(aFile, 'rb')
+dataAnnualRatio = pickle.load(fa)
 
 f = open(cFile, 'rb')
 dataCorrelation = pickle.load(f)
@@ -87,14 +90,13 @@ def doDrawRain(i):
     if doCorrection:
         #plot the original
 
-        popt = dataCorrelation[iSeason].popt
+        #popt = dataCorrelation[iSeason].popt
         #print popt
-        a = popt[0]
-        b = popt[1]
-        #prepArray = ((prepArray[:])/1000.0 / a )**(1/(b+1)) * 1000.0
-        prepArray = ((prepArray[:])/ a )**(1/(b+1))
-        #ax = fig.add_subplot(121)
-        #ax.set_title('original')
+        #a = popt[0]
+        #b = popt[1]
+        #prepArray = ((prepArray[:])/ a )**(1/(b+1))
+        prepArray = prepArray * dataAnnualRatio
+
         doSubplot(fig, prepArray, myDate, 122, "Corrected")
 
 
