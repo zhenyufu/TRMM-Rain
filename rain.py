@@ -17,9 +17,9 @@ from mpl_toolkits.basemap import Basemap, cm
 hostPath = "/media/sf_myshareDebianMain/"
 
 def strToNum(tempList):
-    print tempList.shape
+    #print tempList.shape
     a = np.zeros(shape=(tempList.shape))
-    print a
+    #print a
     position = 0
     for i in np.nditer(tempList):
         try:
@@ -33,13 +33,13 @@ def strToNum(tempList):
     return a
 def monthToNum(month):
     x = 0
-    if month == "Ene":
+    if month == "Ene" or month == "Jan":
         x = 1
     elif month == "Feb":
         x = 2
     elif month == "Mar":
         x = 3
-    elif month == "Abr":
+    elif month == "Abr" or month == "Apr":
         x = 4
     elif month == "May":
         x = 5
@@ -47,7 +47,7 @@ def monthToNum(month):
         x = 6
     elif month == "Jul":
         x = 7
-    elif month == "Ago":
+    elif month == "Ago" or month == "Aug":
         x = 8
     elif month == "Sep":
         x = 9
@@ -55,7 +55,7 @@ def monthToNum(month):
         x = 10
     elif month == "Nov":
         x = 11
-    elif month == "Dic":
+    elif month == "Dic" or month == "Dec":
         x = 12
     else:
         x = -1
@@ -99,6 +99,9 @@ class StationData:
             self.listPrep = strToNum(tempArray[:,5])
         elif tempCol ==3:
             self.listPrep = np.add(strToNum(tempArray[:,1]), strToNum(tempArray[:,2]))
+        # this is the atrium data
+        elif tempCol ==6:
+            self.listPrep = strToNum(tempArray[:,4])
         else:
             print "data format wrong"
 
@@ -113,9 +116,11 @@ class StationData:
             # day
             d = int(temp[0])
             # month
+            #print temp[1]
             m = monthToNum(temp[1])
             # year
-            y = int(temp[2])
+            #print "year" , temp[2]
+            y = int(temp[2].strip('\0'))
             #
 
             date = datetime.date(y,m,d)

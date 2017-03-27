@@ -47,3 +47,7 @@ dataCorrelation_0.2 changed units to mm
 dataCorrelation_0.3 added annual
 
 dataRatioMAP_0.1 2d grid of ralationship of station/TRMM
+
+
+dataAtrium_0.1 added the 4 new stations 
+
