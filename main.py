@@ -29,6 +29,7 @@ kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 isClark = False
 clarkRain = [1908, 2148, 1752, 2940, 4140, 4116, 5436]
 clarkTRMM = [1800, 2516, 1600, 3154, 4152, 3998, 4831]
+isAtrium = True
 
 ###########################################################
 print "reading spanish data"
@@ -40,6 +41,10 @@ for data in dataSpanish:
     print data.dateList[0] , "to", data.dateList[-1]
     print data.elevation
 
+if isAtrium:
+    fa = open('_data/dataAtrium_0.2', 'rb')
+    dataAtrium = pickle.load(fa)
+    dataSpanish.extend(dataAtrium)
 
 
 print "reading TRMM data"

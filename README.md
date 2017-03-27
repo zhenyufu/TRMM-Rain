@@ -50,4 +50,6 @@ dataRatioMAP_0.1 2d grid of ralationship of station/TRMM
 
 
 dataAtrium_0.1 added the 4 new stations 
+dataAtrium_0.2 added lat lon and elevation 
+
 
