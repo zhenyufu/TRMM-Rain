@@ -515,7 +515,7 @@ if plotElevation and isMeaned:
     fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
     plt.scatter(fdiv,elevationArray, c= "blue")
     plt.xlabel('fdiv')
-    plt.ylabel("elevation (m)")
+    plt.ylabel("elevation (mm)")
     title = "mean " + str(splitLength) + "- vs elevation vs fdiv"
     fig.suptitle( title, fontsize=20)
     plt.show()
