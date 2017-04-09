@@ -45,6 +45,9 @@ dataSpanish_0.8.1 changed to invalidating everythin -999 -1 and empty
 dataCorrelation_0.1 added dry and wet correlation data
 dataCorrelation_0.2 changed units to mm
 dataCorrelation_0.3 added annual
+dataCorrelation_0.4 redid with dry and wet for all data from all 3 sources 
+
+
 
 dataRatioMAP_0.1 2d grid of ralationship of station/TRMM
 

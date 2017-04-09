@@ -12,7 +12,7 @@ yearThreshold = 0.1 # 10%
 plotElevation = True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = False # e
+bySeason = True # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
@@ -31,6 +31,7 @@ clarkRain = [1908, 2148, 1752, 2940, 4140, 4116, 5436]
 clarkTRMM = [1800, 2516, 1600, 3154, 4152, 3998, 4831]
 isAtrium = True
 
+isAllThree = False
 ###########################################################
 print "reading spanish data"
 f = open('_data/dataSpanish_0.8.1', 'rb')
@@ -353,6 +354,8 @@ for station in dataSpanish:
             totalSpanish.extend(dSpanish)
             totalTRMM.extend(dTRMM)
 
+        print "totalSpanish:", totalSpanish
+        print "totalTMM:", totalTRMM
 
         #print len(dDate)
         ##print len(dSpanish)
@@ -475,15 +478,30 @@ if plotType == 3:
          #   totalSpanish.extend(clarkRain)
           #  totalTRMM.extend(clarkTRMM)
 
+        if isAllThree:
+            totalSpanish.extend(clarkRain)
+            totalTRMM.extend(clarkTRMM)
+            popt, pcov, r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "data")
 
-        popt, pcov, r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "data")
+        else:
+            #popt, pcov, r_squared = plotAOverB(totalTRMM[:12], totalSpanish[:12], True, "blue", "data") # this is fit without atrium
+            popt, pcov, r_squared = plotAOverB(totalTRMM, totalSpanish, True, "blue", "data") # this is fit with atrium
 
-        if isClark:
-            # add clark data
-            cDiv = [float(ai)/bi for ai,bi in zip(clarkTRMM, clarkRain)]
-            #clarkRain = [float(f/1000) for f in clarkRain]
-            plt.scatter(clarkRain, cDiv ,c= "red", label="Clark")
-            plt.ylim([0,7])
+            if isClark:
+                # add clark data
+                cDiv = [float(ai)/bi for ai,bi in zip(clarkTRMM, clarkRain)]
+                #clarkRain = [float(f/1000) for f in clarkRain]
+                plt.scatter(clarkRain, cDiv ,c= "red", label="Clark")
+                plt.ylim([0,7])
+
+            if isAtrium:
+                # USE -4 or -3:
+                # -3: when it is used as fit
+
+                aDiv = [float(ai)/bi for ai,bi in zip(totalTRMM[-3:], totalSpanish[-3:])]
+                plt.scatter(totalSpanish[-3:], aDiv ,c= "green", label="Atrium")
+                #popt, pcov, r_squared = plotAOverB(totalTRMM, totalSpanish, True, "green", "atrium")
+
 
  ####################################################
     pre = ""
