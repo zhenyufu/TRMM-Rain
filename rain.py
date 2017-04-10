@@ -336,9 +336,9 @@ def pointLineDistance(x, y, x1, y1, x2, y2):
 
 def isDrySeason(month):
     if month >= 5 and  month <= 10:
-        return 1#True
+        return 1#True # dry season
     else:
-        return 2#False
+        return 2#False# wet season
 
     #if month >= 5 and  month <= 9:
     #    return 1

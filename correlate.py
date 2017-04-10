@@ -1,16 +1,18 @@
 from rain import *
 
 proj = "mill" # "stere"
-cFile = "_data/dataCorrelation_0.2"
+cFile = "_data/dataCorrelation_0.4"
 imageDir = "img/"
 imagePre = "rain"
 imageSave = True
 imageShow = False
 doCorrection = True
 
-aFile = "_data/dataAnnualRatio_0.1"
+aFile = "_data/dataAnnualRatio_0.2"
 fa = open(aFile, 'rb')
-dataAnnualRatio = pickle.load(fa)
+ratioList  = pickle.load(fa)
+ratioDry =  ratioList[0]
+ratioWet =  ratioList[1]
 
 f = open(cFile, 'rb')
 dataCorrelation = pickle.load(f)
@@ -82,10 +84,11 @@ def doDrawRain(i):
     if isDrySeason(myDate.month) == 1:
         iSeason = 0
         imageSeason = "dry"
+        prepArray = prepArray * ratioDry
     else:
         iSeason = 1
         imageSeason = "wet"
-
+        prepArray = prepArray * ratioWet
     # correction
     if doCorrection:
         #plot the original
@@ -95,7 +98,7 @@ def doDrawRain(i):
         #a = popt[0]
         #b = popt[1]
         #prepArray = ((prepArray[:])/ a )**(1/(b+1))
-        prepArray = prepArray * dataAnnualRatio
+        #prepArray = prepArray * ratioDry
 
         doSubplot(fig, prepArray, myDate, 122, "Corrected")
 

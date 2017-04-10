@@ -50,7 +50,7 @@ dataCorrelation_0.4 redid with dry and wet for all data from all 3 sources
 
 
 dataRatioMAP_0.1 2d grid of ralationship of station/TRMM
-
+dataRatioMAP_0.2 a list of 2 x 2d grids , first one dry, second wet 
 
 dataAtrium_0.1 added the 4 new stations 
 dataAtrium_0.2 added lat lon and elevation 
