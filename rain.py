@@ -9,7 +9,9 @@ import matplotlib.pyplot as plt
 from bisect import bisect_left
 import simplekml
 from pylab import *
-from scipy.optimize import curve_fit
+from scipy.optimize import curve_fit ################################### need to comment this
+#import scipy.optimize as op # curve_fit
+
 import math as Math
 from mpl_toolkits.basemap import Basemap, cm
 

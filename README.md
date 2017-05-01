@@ -39,7 +39,8 @@ dataSpanish_0.6 added string of time covered
 dataSpanish_0.7 added TRMMUsedMAP and TRMMAllMAP 
 dataSpanish_0.8 added actual station names 
 dataSpanish_0.8.1 changed to invalidating everythin -999 -1 and empty
-
+dataSpanish_0.8.2 based on 0.8.1 but added in all artrium stations
+#dataSpanish_0.8.3  added in start end date for these artrium stations 
 
 
 dataCorrelation_0.1 added dry and wet correlation data
@@ -48,7 +49,7 @@ dataCorrelation_0.3 added annual
 dataCorrelation_0.4 redid with dry and wet for all data from all 3 sources 
 
 
-
+(dataAnnualRatio)
 dataRatioMAP_0.1 2d grid of ralationship of station/TRMM
 dataRatioMAP_0.2 a list of 2 x 2d grids , first one dry, second wet 
 

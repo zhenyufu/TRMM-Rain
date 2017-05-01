@@ -1,6 +1,6 @@
 from rain import *
-
-
+#from scipy.optimize import curve_fit
+#import scipy.optimize.curve_fit as curve_fit
 
 print "MAIN: This is the main script"
 #hostPath = "/media/sf_myshareDebianMain/"
@@ -9,7 +9,7 @@ yearThreshold = 0.1 # 10%
 # 1 is by day
 # 30
 # 365
-plotElevation = True # use only with isMeaned = True
+plotElevation = False #True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
 bySeason = True # e
@@ -185,7 +185,7 @@ for station in dataSpanish:
 
         while( dayCounter <= lapEnd):
             # for everyday in slpitLength
-            # print dayCounter
+            print dayCounter
             cumuDay = dayCounter
             # 1 is dry, 2 is wet
             cumuSpanish = 0
@@ -199,18 +199,58 @@ for station in dataSpanish:
                     continue
 
                 seasonMiss = 0
-                print "season start:", dayCounter
-                while isDrySeason(dayCounter.month) ==  seasonId:
+                print "season start:", dayCounter, "with id" , isDrySeason(dayCounter.month), "in season", seasonId
+                while isDrySeason(dayCounter.month) ==  seasonId and dayCounter <= lapEnd:
 
-
+                    p = -1
                     try:
                         iSpanish = station.dateList.index(dayCounter)
                         iTRMM = TRMMDateList.index(dayCounter)
+                        p = station.listPrep[iSpanish]
                     except:
-                        dayCounter += datetime.timedelta(days=1)
+                        missing1 = dayCounter - datetime.timedelta(days=1)
+                        while True:
+                             try:
+                                 iSsss = station.dateList.index(missing1)
+                                 break
+                             except:
+                                 missing1 -= datetime.timedelta(days=1)
+                                 pass
+
+
+                        tempCounter = dayCounter
+                        while True:
+                           # print "checking" , tempCounter
+                            try:
+                                iSpanish = station.dateList.index(tempCounter)
+                                break
+                            except:
+                                tempCounter += datetime.timedelta(days=1)
+                                if tempCounter == station.dateList[-1]:
+                                    break
+                                pass
+                        # comes out of the continuous missing days
+                        missing2 = tempCounter
+                        missed = (missing2 - missing1).days - 1
+                        if missed > 18:
+                            dayCounter += datetime.timedelta(days=1)
+                            continue
+                        # calculate and loop through to put them back
+                        i1 = station.dateList.index(missing1)
+                        i2 = station.dateList.index(missing2)
+
+                        prep1 = station.listPrep[i1]
+                        prep2 = station.listPrep[i2]
+
+                        p = (prep1 + prep2)/2
+                        print "Missing" , missed ,"between points:", missing1 ,"-" , missing2, ":", prep1 ,",", prep2
+                        print "day " , dayCounter, "prep", p
+
+
+                       # dayCounter += datetime.timedelta(days=1)
                         seasonMiss +=1
-                        continue
-                    p = station.listPrep[iSpanish]
+                        #continue
+                    # print "p is " , p
                     if p >= 0:
                         addSpanish = p
                         addTRMM = dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
@@ -229,11 +269,15 @@ for station in dataSpanish:
                         cumuSpanish2 += addSpanish
                         cumuTRMM2 += addTRMM
                     else:
+                        dayCounter += datetime.timedelta(days=1)
                         continue
-
+                    #print "addinggggggggg"
                     dayCounter += datetime.timedelta(days=1)
+                if dayCounter > lapEnd:
+                    break
                 print "season end:", dayCounter
                 print "missed days in season", seasonMiss
+
 
                 if isDrySeason(dayCounter.month) == 1:
                     print str(cumuSpanish2)
@@ -258,11 +302,13 @@ for station in dataSpanish:
                     dataDone = True
                     break;
                 # print dayCounter
+                p = -1
                 try:
                     # get index
                     iSpanish = station.dateList.index(dayCounter)
                     iTRMM = TRMMDateList.index(dayCounter)
                     #if station.fileName == "raw_senamhi/madre5.csv":
+                    p = station.listPrep[iSpanish]
                     #    print dayCounter, "and", overLap
                 except:
                     # this date is not in one of the two lists
@@ -275,7 +321,6 @@ for station in dataSpanish:
                     continue
 
                 # get the prep only if the station is not -1
-                p = station.listPrep[iSpanish]
                 if p >= 0:
                     cumuSpanish += p
                     cumuTRMM += dataTRMM.variables['precipitation'][iTRMM,iLon,iLat]
