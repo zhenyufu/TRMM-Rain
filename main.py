@@ -234,6 +234,7 @@ for station in dataSpanish:
                         missed = (missing2 - missing1).days - 1
                         if missed > 18:
                             dayCounter += datetime.timedelta(days=1)
+                            seasonMiss +=1
                             continue
                         # calculate and loop through to put them back
                         i1 = station.dateList.index(missing1)
