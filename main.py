@@ -248,7 +248,7 @@ for station in dataSpanish:
 
 
                        # dayCounter += datetime.timedelta(days=1)
-                        seasonMiss +=1
+                       # seasonMiss +=1
                         #continue
                     # print "p is " , p
                     if p >= 0:
