@@ -12,7 +12,7 @@ yearThreshold = 0.1 # 10%
 plotElevation = False #True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = False # e
+bySeason = True # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
