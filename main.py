@@ -12,7 +12,7 @@ yearThreshold = 0.1 # 10%
 plotElevation = False #True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = True # e
+bySeason = False # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
@@ -243,7 +243,21 @@ for station in dataSpanish:
                         prep1 = station.listPrep[i1]
                         prep2 = station.listPrep[i2]
 
-                        p = (prep1 + prep2)/2
+
+                        #######################
+                        x1 = 0
+                        x2 = missed + 1
+                        x3 = (dayCounter - missing1).days
+                        dList = [x1, x2]
+                        pList = [prep1, prep2]
+                        popt, pcov = curve_fit(curveLinear,dList,pList )
+                        p = popt[0] * x3 + popt[1]
+
+                        # p = (prep1 + prep2)/2
+
+
+
+
                         print "Missing" , missed ,"between points:", missing1 ,"-" , missing2, ":", prep1 ,",", prep2
                         print "day " , dayCounter, "prep", p
 

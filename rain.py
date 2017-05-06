@@ -252,6 +252,10 @@ def compareList(dSpanish, dTRMM):
     return biggerTRMM
 
 
+def curveLinear(x,a,b):
+     return a*x+b
+
+
 def curveExpo(x, a, b, c):
     return a*np.exp(b*x)+c
 
