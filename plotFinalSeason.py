@@ -5,6 +5,10 @@ f1 = "plot/season1"
 data1 = pickle.load( open(f1, 'rb') )
 
 fig = plt.figure(figsize=(16, 10))
+
+titleSize = 20
+labelSize = 20
+plt.tick_params(labelsize = 14)
 #################################3
 
 popt, pcov, r_squared = plotAOverB(data1[0], data1[1], True, "red", "Dry Season")
@@ -25,15 +29,16 @@ title = "Dry Season Fit: " +  r'$y=' +  a1 + " x^{" + b1 + "}"  + "\/\/ r^2 = " 
 title += "\n"
 title += "Wet Season Fit: " +  r'$y=' +  a2 + " x^{" + b2 + "}"  + "\/\/ r^2 = " + r2 + '$'
 
-fig.suptitle(title, fontsize= 16)
-plt.xlabel('Mean seasonal precipitation of weather stations (mm)', fontsize=14 )
-plt.ylabel("Mean seasonal precipitation (TRMM / WS)" , fontsize=14 )
+fig.suptitle(title, fontsize= titleSize)
+plt.xlabel('Mean seasonal precipitation of weather stations (mm)', fontsize= labelSize )
+plt.ylabel("Mean seasonal precipitation ratio (TRMM / WS)" , fontsize= labelSize )
 plt.legend(loc='upper right')
 plt.xlim(xmin=0)
 
 
 
 
+#################################3
 
 plt.show()
 

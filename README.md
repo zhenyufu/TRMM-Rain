@@ -41,7 +41,9 @@ dataSpanish_0.8 added actual station names
 dataSpanish_0.8.1 changed to invalidating everythin -999 -1 and empty
 dataSpanish_0.8.2 based on 0.8.1 but added in all artrium stations
 dataSpanish_0.8.3 meanAP in 0.8.2 was wrong, this is now correct with gapfills using the fit method
-
+dataSpanish_0.8.4  dataSpanish_0.8.3 but added stationnames to the last four
+dataSpanish_0.8.5 dataSpanish_0.8.4 but added TRMM total for all
+dataSpanish_0.8.6 corrected the station Name again, incorrect one: has duplicates, should stay with 0.8.4 
 
 dataCorrelation_0.1 added dry and wet correlation data
 dataCorrelation_0.2 changed units to mm

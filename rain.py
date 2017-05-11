@@ -284,7 +284,7 @@ def plotAOverB(totalTRMM, totalSpanish ,drawCurve, col, lab):
     #totalSpanish = [float(f/1000) for f in totalSpanish]
     plt.ylim([0,7])
 
-    plt.scatter(totalSpanish, fdiv ,c= col, label=lab)
+    plt.scatter(totalSpanish, fdiv ,c= col, label=lab, s= 36)
 
     #popt, pcov = curve_fit(curvePower, totalSpanish, fdiv,p0=(1, -0.87))
     popt, pcov = curve_fit(curvePower, totalSpanish, fdiv, p0 = (0.8, -0.8))

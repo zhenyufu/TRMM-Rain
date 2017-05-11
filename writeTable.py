@@ -1,17 +1,17 @@
 from rain import *
 
-f = open('_data/dataSpanish_0.8.3', 'rb')
+f = open('_data/dataSpanish_0.8.4', 'rb')
 dataSpanish = pickle.load(f)
 
 myFile = hostPath + "table.csv"
 myHandler = open(myFile,"w")
 myWriter = csv.writer(myHandler)
-row = ["fileName", "mapId", "Lat", "Lon", "Elevation(m)","startDate", "endDate", "lapStart", "lapEnd", "numOverLap", "numObservation", "numOfMissing", "meanAP", "yearUsed", "TRMMUsedMAP", "TRMMAllMAP"]
+row = ["stationName", "fileName", "mapId", "Lat", "Lon", "Elevation(m)","startDate", "endDate", "lapStart", "lapEnd", "numOverLap", "numObservation", "numOfMissing", "meanAP", "yearUsed", "TRMMUsedMAP", "TRMMAllMAP"]
 myWriter.writerow(row)
 
 for station in dataSpanish:
     row = []
-    #row.append(station.stationName)
+    row.append(station.stationName)
     row.append(station.fileName)
     row.append(station.mapId)
     row.append(station.lat)

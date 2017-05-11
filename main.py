@@ -9,14 +9,14 @@ yearThreshold = 0.1 # 10%
 # 1 is by day
 # 30
 # 365
-plotElevation = False #True # use only with isMeaned = True
+plotElevation = True #True # use only with isMeaned = True
 calEveryMonth = True
 isMeaned = True
-bySeason = True # e
+bySeason = False # e
 seasonThreshold = 0.1
 # Wet: 11-4
 # dry: 5-10
-doCalTRMMAll = False #True
+doCalTRMMAll = False # True
 
 plotType = 3
 # 0 doulbe scatter with time
@@ -29,13 +29,16 @@ kmlName = hostPath + "comparison_Spanish_TRMM_" + str(splitLength) + ".kml"
 isClark = False
 clarkRain = [1908, 2148, 1752, 2940, 4140, 4116, 5436]
 clarkTRMM = [1800, 2516, 1600, 3154, 4152, 3998, 4831]
-isAtrium = True
+isAtrium =  True #False
 
-isAllThree = False
+isAllThree = True #False
 ###########################################################
 print "reading spanish data"
-f = open('_data/dataSpanish_0.8.1', 'rb')
+f = open('_data/dataSpanish_0.8.4', 'rb')
 dataSpanish = pickle.load(f)
+
+#dataSpanish = dataSpanish[:-4] ######################################### remove the altrium
+
 for data in dataSpanish:
     print data.fileName
     print data.lat , ",", data.lon
@@ -385,7 +388,7 @@ for station in dataSpanish:
         if isMeaned:
             print "dSpanish", dSpanish
             print "dSpanish2", dSpanish2
-            if not overLap < splitLength:
+            if not overLap < splitLength and len(dSpanish) !=0:
                 elevationArray.append(station.elevation)
             dSpanish = np.mean(dSpanish)
             dTRMM = np.mean(dTRMM)
@@ -589,14 +592,14 @@ if plotElevation and isMeaned:
     fig.suptitle( title, fontsize=20)
     plt.show()
 
-    fig = plt.figure()
-    fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
-    plt.scatter(fdiv,elevationArray, c= "blue")
-    plt.xlabel('fdiv')
-    plt.ylabel("elevation (mm)")
-    title = "mean " + str(splitLength) + "- vs elevation vs fdiv"
-    fig.suptitle( title, fontsize=20)
-    plt.show()
+    #fig = plt.figure()
+    #fdiv = [float(ai)/bi for ai,bi in zip(totalTRMM,totalSpanish)]
+    #plt.scatter(fdiv,elevationArray, c= "blue")
+    #plt.xlabel('fdiv')
+    #plt.ylabel("elevation (mm)")
+    #title = "mean " + str(splitLength) + "- vs elevation vs fdiv"
+    #fig.suptitle( title, fontsize=20)
+    #plt.show()
 
 
     #fig = plt.figure()

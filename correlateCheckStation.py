@@ -5,7 +5,7 @@ dataTRMM ,TRMMDateList = readTRMM("../TRMM_3B42_Daily.1998-2016.7.SouthAmerica.n
 yearLength = 2016 - 1998
 splitLength = 365
 
-f = open('_data/dataSpanish_0.8.3', 'rb')
+f = open('_data/dataSpanish_0.8.4', 'rb')
 dataSpanish = pickle.load(f)
 for data in dataSpanish:
     print data.fileName
@@ -82,6 +82,15 @@ plt.ylabel("Actual ")
 
 plt.xlim([0,20000])
 plt.ylim([0,20000])
+
+
+aFile = "plot/check1"
+out = open(aFile, 'wb')
+dataAll = []
+dataAll.append(mapArray)
+dataAll.append(stationMap)
+pickle.dump(dataAll, out, pickle.HIGHEST_PROTOCOL)
+out.close()
+
+
 plt.show()
-
-
