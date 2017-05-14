@@ -23,7 +23,7 @@ plt.scatter(ele, fdiv, c= "blue",s =36)
 title = "TRMM MAP accuracy with change in elevation"
 
 fig.suptitle(title, fontsize= titleSize)
-plt.xlabel( "Elevtion (m)", fontsize= labelSize )
+plt.xlabel( "Elevation (m)", fontsize= labelSize )
 plt.ylabel( "Mean annual precipitation ratio (TRMM / WS)"  , fontsize= labelSize )
 plt.xlim(xmin=0)
 

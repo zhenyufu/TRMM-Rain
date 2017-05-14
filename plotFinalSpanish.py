@@ -26,8 +26,15 @@ plt.xlabel('Mean annual precipitation of weather stations (mm)', fontsize= label
 plt.ylabel("Mean annual precipitation ratio (TRMM / WS)" , fontsize= labelSize )
 plt.xlim(xmin=0)
 
+
+print len(data1[0])
+
+
 aDiv = [float(ai)/bi for ai,bi in zip(data1[0][-3:], data1[1][-3:])]
-plt.scatter(data1[0][-3:], aDiv ,c= "magenta", label="Atrium", s= 36)
+plt.scatter(data1[1][-3:], aDiv ,c= "magenta", label="Atrium", s= 36)
+
+
+
 
 plt.legend(loc='upper right')
 

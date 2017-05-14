@@ -7,6 +7,7 @@ imagePre = "rain"
 imageSave = True
 imageShow = False
 doCorrection = True
+withFocus = True
 
 aFile = "_data/dataAnnualRatio_0.2"
 fa = open(aFile, 'rb')
@@ -37,16 +38,22 @@ def doSubplot(fig, prepArray, myDate, pid, pName):
 
 
     # setup basemap.
-    m = Basemap(projection= proj, lat_0=-14.475, lon_0=-72.126,\
+    if withFocus:
+        m = Basemap(projection= proj, lat_0=-14.475, lon_0=-72.126,\
+                 llcrnrlat=-18.62,urcrnrlat=-9.32, \
+                 llcrnrlon=-76.61 ,urcrnrlon=-66.41, \
+                 resolution='l')
+    else:
+        m = Basemap(projection= proj, lat_0=-14.475, lon_0=-72.126,\
                 llcrnrlat=latArray[0],urcrnrlat=latArray[-1],\
                 llcrnrlon=lonArray[0],urcrnrlon=lonArray[-1],\
                 resolution='l')
 
     m.drawcoastlines()
     m.drawcountries()
-    m.drawparallels(np.arange(-90,90,10),labels=[1,0,0,0],fontsize=10)
-    m.drawmeridians(np.arange(0,360,10),labels=[0,0,0,1],fontsize=10)
-
+    m.drawparallels(np.arange(-90,90,1),labels=[1,0,0,0],fontsize=10)
+    m.drawmeridians(np.arange(0,360,1),labels=[0,0,0,1],fontsize=10)
+    # 1 for closeup, 10 for
 
 
 
@@ -73,7 +80,10 @@ def doDrawRain(i):
 
 
     # create figure and axes instances
-    fig = plt.figure(figsize=(8,8))
+    if withFocus:
+        fig = plt.figure(figsize=(16,12))
+    else:
+        fig = plt.figure(figsize=(8,8))
     doSubplot(fig, prepArray, myDate, 121,"Original")
 
 
@@ -105,7 +115,7 @@ def doDrawRain(i):
 
     #########################
     print "Finished:" , str(myDate)
-    fig.suptitle("Hi: " +  str(myDate) + " - season: "+ imageSeason)
+    fig.suptitle("Daily Precipitation map: " +  str(myDate) + " - season: "+ imageSeason)
 
     if imageShow:
         plt.show()
