@@ -4,8 +4,8 @@ proj = "mill" # "stere"
 cFile = "_data/dataCorrelation_0.4"
 imageDir = "img/"
 imagePre = "rain"
-imageSave = True
-imageShow = False
+imageSave = False #True
+imageShow = True
 doCorrection = True
 withFocus = True
 
@@ -33,21 +33,30 @@ lonArray = dataTRMM.variables['lon'][:]
 def doSubplot(fig, prepArray, myDate, pid, pName):
     ax = fig.add_subplot(pid)
     ax.set_title(pName)
-    nx = prepArray.shape[0]
-    ny = prepArray.shape[1]
-
 
     # setup basemap.
     if withFocus:
+##########################################################################3 might have offset
         m = Basemap(projection= proj, lat_0=-14.475, lon_0=-72.126,\
-                 llcrnrlat=-18.62,urcrnrlat=-9.32, \
-                 llcrnrlon=-76.61 ,urcrnrlon=-66.41, \
+                 llcrnrlat=latArray[125],urcrnrlat=latArray[163], \
+                 llcrnrlon=lonArray[53] ,urcrnrlon=lonArray[94], \
                  resolution='l')
+        print latArray[125]
+        print latArray[163]
+        print lonArray[53]
+        print lonArray[94]
+        # subset preparray + 8
+        prepArray = prepArray[53:94, 133:171]
+
     else:
         m = Basemap(projection= proj, lat_0=-14.475, lon_0=-72.126,\
                 llcrnrlat=latArray[0],urcrnrlat=latArray[-1],\
                 llcrnrlon=lonArray[0],urcrnrlon=lonArray[-1],\
                 resolution='l')
+
+    nx = prepArray.shape[0]
+    ny = prepArray.shape[1]
+
 
     m.drawcoastlines()
     m.drawcountries()
@@ -119,6 +128,7 @@ def doDrawRain(i):
 
     if imageShow:
         plt.show()
+        raw_input("Press Enter to continue...")
     if imageSave:
         plt.savefig(imageDir + imagePre + "_" + str(i).zfill(4)  + "_" + str(myDate) + "_" + imageSeason + ".png")
         plt.close(fig)
