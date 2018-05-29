@@ -1,4 +1,4 @@
-# rain
+# TRMM Rain 
 
 TRMM Rainfall Correction in the Madre de Dios Region using regression modeling 
 
